@@ -6,9 +6,7 @@
 **Service Provider:** Internal IT Department  
 **Service Consumers:** Technical Techno Tech Employees and Authorized Personnel  
 **Service Management Framework:** ITIL-Aligned Practices  
-**Service Management Platform:** Jira Service Management (Planned / In Development)
-
----
+**Service Management Platform:** Jira Service Management
 
 ## Purpose
 
@@ -19,8 +17,6 @@ The catalog defines the services provided by the Internal IT Department, their i
 It also supports consistent service delivery, request fulfillment, technical support, and IT service management.
 
 This catalog covers **internal IT services only**. External customer services, such as software development, website development, and game development, are outside its scope.
-
----
 
 ## Service Catalog
 
@@ -33,8 +29,6 @@ This catalog covers **internal IT services only**. External customer services, s
 | IT-SVC-005 | Server & Infrastructure Services | Maintains servers, directory services, storage, and supporting infrastructure. |
 | IT-SVC-006 | Information Security | Supports secure access, endpoint protection, and security-related assistance. |
 | IT-SVC-007 | Employee IT Lifecycle | Coordinates IT onboarding, offboarding, and employee technology changes. |
-
----
 
 ## IT-SVC-001 — Identity & Access Management
 
@@ -63,8 +57,6 @@ Provides centralized management of employee accounts, authentication, and access
 ### Responsible Team
 
 Internal IT — Service Desk / Systems Administration
-
----
 
 ## IT-SVC-002 — Endpoint Management
 
@@ -95,8 +87,6 @@ Provides configuration, administration, maintenance, and support for company-man
 
 Internal IT — Endpoint Administration / Service Desk
 
----
-
 ## IT-SVC-003 — Microsoft 365 & Collaboration
 
 ### Service Description
@@ -124,8 +114,6 @@ Provides employees with access to productivity, communication, and collaboration
 ### Responsible Team
 
 Internal IT — Microsoft 365 Administration / Service Desk
-
----
 
 ## IT-SVC-004 — Network Connectivity
 
@@ -156,8 +144,6 @@ Provides and maintains network connectivity for employee devices, business appli
 ### Responsible Team
 
 Internal IT — Network Administration / Service Desk
-
----
 
 ## IT-SVC-005 — Server & Infrastructure Services
 
@@ -190,8 +176,6 @@ These services primarily support internal business systems and technical teams.
 
 Internal IT — Systems Administration / Infrastructure Administration
 
----
-
 ## IT-SVC-006 — Information Security
 
 ### Service Description
@@ -223,8 +207,6 @@ Supports the protection of company identities, devices, data, and technology res
 Internal IT — Information Security / Systems Administration
 
 **Note:** Security incidents are handled through Incident Management and applicable security response procedures rather than ordinary request fulfillment.
-
----
 
 ## IT-SVC-007 — Employee IT Lifecycle
 
@@ -263,13 +245,11 @@ Employee lifecycle requests should originate from authorized personnel, such as 
 
 Identity verification, approval, and access authorization requirements are determined by the relevant IT procedures.
 
----
-
 ## Request Submission & Fulfillment
 
 Employees and authorized personnel may request IT services through approved support channels.
 
-### Planned Request Channels
+### Request Channels
 
 - Jira Service Management employee portal
 - Authorized email requests
@@ -286,30 +266,13 @@ Employees and authorized personnel may request IT services through approved supp
 
 Specific fulfillment steps depend on the service and request type.
 
----
-
 ## Incident Reporting
 
 The Service Catalog describes available IT services and request offerings.
 
 Unexpected interruptions, failures, or degradation of those services are handled through Incident Management.
 
-### Examples
-
-| Situation | Classification |
-|---|---|
-| Employee requests access to a shared folder | Service Request |
-| Employee loses access to an existing shared folder unexpectedly | Incident |
-| Employee requests installation of approved software | Service Request |
-| An installed application stops functioning | Incident |
-| Manager requests a new employee account | Service Request |
-| Employee cannot sign in due to an unexpected authentication failure | Incident |
-| Employee requests a new workstation | Service Request |
-| Employee's existing workstation will not start | Incident |
-
 Requests and incidents may involve the same technology but require different management workflows.
-
----
 
 ## Service Ownership & Responsibilities
 
@@ -327,9 +290,7 @@ Responsibilities may include:
 - Documentation maintenance
 - Continual improvement
 
-Individual responsibilities may be assigned to simulated IT roles as the organizational structure develops.
-
----
+Individual responsibilities may be assigned to emulated IT roles as the organizational structure develops.
 
 ## ITIL Management Practice Alignment
 
@@ -350,8 +311,6 @@ ITIL-aligned management practices define how those services are supported, contr
 | Information Security Management | Protects information and supports security requirements. |
 | Continual Improvement | Identifies and implements service improvements. |
 
----
-
 ## Service Catalog Maintenance
 
 The Service Catalog should be reviewed and updated when:
@@ -363,9 +322,7 @@ The Service Catalog should be reviewed and updated when:
 - Request offerings or approval requirements change.
 - Improvements are identified through IT service management activities.
 
-Service descriptions should reflect the capabilities actually available within the simulated environment.
-
----
+Service descriptions should reflect the capabilities actually available within the emulated environment.
 
 ## Simulation & Portfolio Scope
 
@@ -375,6 +332,6 @@ This Service Catalog represents a proposed internal IT service structure.
 
 Not every listed service, request offering, or supporting technology has been fully implemented.
 
-Services will be configured, tested, documented, and refined as the simulated IT environment develops.
+Services will be configured, tested, documented, and refined as the emulated IT environment develops.
 
-All employee requests, incidents, approvals, and operational records are simulated unless otherwise stated.
+All employee requests, incidents, approvals, and operational records are emulated unless otherwise stated.

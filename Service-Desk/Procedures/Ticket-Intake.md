@@ -4,11 +4,9 @@
 **Department:** Internal IT / Service Desk  
 **Document Type:** Standard Operating Procedure (SOP)  
 **Procedure ID:** SOP-SD-001  
-**Version:** 1.0  
+**Version:** 1.1  
 **Status:** Draft — Lab Procedure  
 **ITIL Practices:** Service Desk, Incident Management, Service Request Management
-
----
 
 ## 1. Purpose
 
@@ -27,8 +25,6 @@ This procedure supports:
 - Reliable operational reporting
 
 **Key Principle:** Every ticket should clearly explain who needs assistance, what they need, how the issue affects them, and what action should happen next.
-
----
 
 ## 2. Scope
 
@@ -58,11 +54,7 @@ Tickets may originate from:
 - Monitoring alerts
 - Internal IT personnel
 
-Jira Service Management is the proposed primary ticketing platform for this portfolio.
-
 Only channels actually configured in the lab should be represented as operational.
-
----
 
 ## 3. Roles and Responsibilities
 
@@ -110,9 +102,7 @@ Responsible for:
 - Responding to clarification questions
 - Participating in validation when appropriate
 
-**Lab Note:** These roles are simulated. A single learner may perform multiple roles during an exercise.
-
----
+**Lab Note:** These roles are emulated. A single learner may perform multiple roles during an exercise.
 
 ## 4. Ticket Classification
 
@@ -122,14 +112,6 @@ Every incoming ticket must be evaluated to determine the appropriate type of wor
 
 An **incident** is an unplanned interruption to a service or a reduction in service quality.
 
-Examples:
-
-- Employee cannot sign in to Windows.
-- Network connectivity is unavailable.
-- Outlook stops working.
-- A shared folder becomes inaccessible.
-- A critical Windows service fails.
-
 **Primary Objective:** Restore normal service as quickly as appropriate.
 
 **Related Practice:** Incident Management
@@ -138,15 +120,6 @@ Examples:
 
 A **service request** is a request from a user or authorized representative for a predefined service action.
 
-Examples:
-
-- Request a new user account.
-- Request access to a shared folder.
-- Request software installation.
-- Request a password reset.
-- Request a new workstation.
-- Request an employee onboarding task.
-
 **Primary Objective:** Fulfill the authorized request according to established procedures.
 
 **Related Practice:** Service Request Management
@@ -154,14 +127,6 @@ Examples:
 ### 4.3 Security-Related Ticket
 
 A ticket may involve a potential information security concern.
-
-Examples:
-
-- Suspected account compromise
-- Suspicious authentication activity
-- Unauthorized access
-- Malware alert
-- Lost company device
 
 Security-related tickets must be assessed for appropriate confidentiality, urgency, and escalation.
 
@@ -179,10 +144,6 @@ Some activities may require separate records for:
 - Continual improvement
 
 These records should be created when the corresponding management practice is applicable.
-
-**Important:** A user reporting a service failure does not automatically create a Problem record. A Problem record is used when investigation of an underlying cause is warranted.
-
----
 
 ## 5. Required Ticket Information
 
@@ -223,8 +184,6 @@ Collect when relevant:
 - Screenshots or diagnostic evidence
 
 Do not collect passwords, MFA codes, or other authentication secrets.
-
----
 
 ## 6. Ticket Intake Procedure
 
@@ -354,7 +313,7 @@ Consider:
 
 Use impact and urgency to determine ticket priority.
 
-#### Proposed Priority Matrix
+#### Priority Matrix
 
 | Impact / Urgency | High | Medium | Low |
 |---|---|---|---|
@@ -370,8 +329,6 @@ Use impact and urgency to determine ticket priority.
 | P2 | High | Significant business impact requiring expedited attention |
 | P3 | Medium | Standard operational issue |
 | P4 | Low | Limited impact or routine work |
-
-This matrix is a proposed lab policy rather than a universal ITIL requirement.
 
 Service requests may use separate fulfillment targets and priority rules.
 
@@ -493,28 +450,7 @@ Actual status names may vary depending on the configured ticketing platform.
 
 **Expected Result:** Ticket status accurately reflects the work being performed.
 
----
-
-## 7. Ticket Routing Guidelines
-
-| Ticket Category | Initial Routing |
-|---|---|
-| Password reset | Service Desk / Identity Administration |
-| Account lockout | Service Desk / Identity Administration |
-| Shared folder access request | Service Request Management |
-| Workstation troubleshooting | Service Desk / Endpoint Support |
-| Microsoft 365 issue | Service Desk / Microsoft 365 Administration |
-| Network connectivity failure | Service Desk / Network Administration |
-| Domain controller failure | Systems Administration |
-| Suspected account compromise | Information Security escalation |
-| New employee onboarding | Service Request Management / Employee IT Lifecycle |
-| Infrastructure configuration change | Change Enablement, when applicable |
-
-Routing should reflect technician permissions, technical complexity, and organizational requirements.
-
----
-
-## 8. Ticket Documentation Standards
+## 7. Ticket Documentation Standards
 
 Ticket descriptions should be clear, factual, and concise.
 
@@ -522,13 +458,9 @@ Ticket descriptions should be clear, factual, and concise.
 
 `[Affected Service or System] — [Issue or Request]`
 
-Examples:
+Example:
 
 - `Active Directory — Employee Account Locked`
-- `Microsoft 365 — Outlook Sign-In Failure`
-- `Networking — Workstation Cannot Reach Gateway`
-- `Endpoint Management — Software Installation Request`
-- `Windows Server — DNS Service Unavailable`
 
 ### Documentation Requirements
 
@@ -547,57 +479,7 @@ Every ticket should:
 11. Identify the next action.
 12. Document resolution and validation before closure.
 
----
-
-## 9. Example Ticket Intake
-
-### Scenario
-
-An employee contacts the Service Desk because they cannot access a shared departmental folder.
-
-### Initial Ticket
-
-**Summary:** Active Directory — Shared Folder Access Denied
-
-**Requester:** Sarah Connor  
-**Affected Service:** IT-SVC-001 — Identity & Access Management  
-**Ticket Type:** Incident — pending confirmation  
-**Impact:** Low  
-**Urgency:** Medium  
-**Proposed Priority:** P4
-
-### Description
-
-The employee reports receiving an access-denied message when attempting to open a departmental shared folder.
-
-The employee states that access previously worked.
-
-### Initial Assessment
-
-The technician should determine:
-
-- Whether the employee previously had authorized access
-- Whether other employees are affected
-- Whether the folder is reachable
-- Whether security group membership changed
-- Whether file permissions changed
-- Whether the employee is requesting new access instead of reporting lost access
-
-### Classification Decision
-
-**If previously authorized access stopped working:** Treat as an incident.
-
-**If the employee is requesting access they never had:** Treat as a service request requiring applicable authorization.
-
-### Next Action
-
-Route the ticket according to its confirmed classification and the technician's permissions.
-
-This is an illustrative fictional scenario, not a claim that a live ticket was processed.
-
----
-
-## 10. Quality Assurance Checklist
+## 8. Quality Assurance Checklist
 
 Before completing ticket intake, verify:
 
@@ -619,9 +501,7 @@ Before completing ticket intake, verify:
 - [ ] Ticket status updated
 - [ ] Next action documented
 
----
-
-## 11. Ticket Intake Performance Metrics
+## 9. Ticket Intake Performance Metrics
 
 Ticket intake effectiveness may be evaluated using:
 
@@ -635,36 +515,9 @@ Ticket intake effectiveness may be evaluated using:
 | Escalation Accuracy | Evaluates whether tickets reach appropriate support personnel |
 | Ticket Backlog | Tracks unresolved incoming work |
 
-Metrics should be based on actual ticket data or clearly labeled simulated datasets.
+Metrics should be based on actual ticket data or clearly labeled emulated datasets.
 
----
-
-## 12. Related Procedures and Documentation
-
-### ITIL Practices
-
-- [Service Desk](../../Service-Desk/)
-- [Incident Management](../../Incident-Management/)
-- [Service Request Management](../../Service-Request-Management/)
-- [Knowledge Management](../../Knowledge-Management/)
-- [Problem Management](../../Problem-Management/)
-- [Change Enablement](../../Change-Enablement/)
-- [Information Security Management](../../Information-Security-Management/)
-
-### Organization Documentation
-
-- [Company Overview](../../Company-Overview.md)
-- [IT Service Catalog](../../Service-Catalog.md)
-- [Operational Scenarios](../../Scenarios/)
-
-### Templates
-
-- [Incident Template](../../Templates/Incident-Template.md)
-- [Service Request Template](../../Templates/Service-Request-Template.md)
-
----
-
-## 13. Procedure Review
+## 10. Procedure Review
 
 This procedure should be reviewed when:
 
@@ -680,15 +533,4 @@ This procedure should be reviewed when:
 | Version | Description |
 |---|---|
 | 1.0 | Initial ticket intake and triage procedure |
-
----
-
-## Portfolio Disclaimer
-
-Technical Techno Tech is a fictional organization developed for hands-on IT training and professional portfolio development.
-
-Employee identities, business requests, ticket examples, organizational responsibilities, and approval workflows may be simulated.
-
-Ticketing configurations, troubleshooting actions, technical investigations, and validation are documented based on hands-on work performed in controlled lab environments where indicated.
-
-This procedure demonstrates ITIL-aligned Service Desk operations, ticket classification, prioritization, communication, and escalation rather than employment experience within an actual production organization.
+| 1.1 | Remove unnecessary information |

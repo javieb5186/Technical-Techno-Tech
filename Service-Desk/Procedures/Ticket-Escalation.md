@@ -4,11 +4,9 @@
 **Department:** Internal IT / Service Desk  
 **Document Type:** Standard Operating Procedure (SOP)  
 **Procedure ID:** SOP-SD-004  
-**Version:** 1.0  
+**Version:** 1.1
 **Status:** Draft — Lab Procedure  
 **ITIL Practices:** Service Desk, Incident Management, Service Request Management
-
----
 
 ## 1. Purpose
 
@@ -29,8 +27,6 @@ The procedure supports:
 - Consistent escalation decisions
 
 **Key Principle:** Escalation is not a failure to resolve an issue. It is a controlled process for obtaining the resources, authority, or expertise necessary to restore service or fulfill a request.
-
----
 
 ## 2. Scope
 
@@ -56,8 +52,6 @@ This procedure applies to IT support tickets managed by Technical Techno Tech's 
 | IT-SVC-005 | Server & Infrastructure Services |
 | IT-SVC-006 | Information Security |
 | IT-SVC-007 | Employee IT Lifecycle |
-
----
 
 ## 3. Roles and Responsibilities
 
@@ -127,9 +121,7 @@ Responsible for:
 - Supporting containment and recovery
 - Advising on security-related escalation
 
-**Lab Note:** These roles represent simulated organizational responsibilities. A single learner may perform multiple roles during a controlled lab exercise.
-
----
+**Lab Note:** These roles represent emulated organizational responsibilities. A single learner may perform multiple roles during a controlled lab exercise.
 
 ## 4. Escalation Types
 
@@ -139,26 +131,11 @@ Technical Techno Tech recognizes two primary escalation methods.
 
 Functional escalation transfers a ticket to personnel with additional technical expertise, specialized tools, or appropriate administrative permissions.
 
-**Examples:**
-
-- Service Desk escalates an Active Directory replication issue to Systems Administration.
-- Endpoint Support escalates a network routing issue to Network Administration.
-- Service Desk escalates a Microsoft Intune configuration issue to Endpoint Administration.
-- Tier 2 escalates a complex Windows Server failure to Tier 3.
-
 **Purpose:** Obtain the technical expertise or authority required to complete the work.
 
 ### 4.2 Hierarchical Escalation
 
 Hierarchical escalation raises an issue to supervisory or management personnel for coordination, decisions, resources, or organizational attention.
-
-**Examples:**
-
-- Critical business service outage
-- Unresolved resource constraints
-- Significant service target risk
-- Conflicting operational priorities
-- Business-impacting incident requiring management coordination
 
 **Purpose:** Obtain management attention, decisions, or additional organizational resources.
 
@@ -171,11 +148,9 @@ A critical infrastructure incident may require both:
 - Functional escalation to a systems administrator
 - Hierarchical escalation to IT management
 
----
-
 ## 5. Support Tier Structure
 
-Technical Techno Tech uses a proposed three-tier technical support model.
+Technical Techno Tech uses a three-tier technical support model.
 
 | Support Tier | Primary Responsibility | Example Activities |
 |---|---|---|
@@ -222,8 +197,6 @@ Typical responsibilities:
 - Microsoft Azure infrastructure
 - Advanced cloud administration
 - Infrastructure recovery
-
----
 
 ## 6. Escalation Triggers
 
@@ -281,29 +254,7 @@ Escalation may be required when:
 
 Service targets must be defined by applicable internal policies or agreements. This procedure does not establish contractual response or resolution guarantees.
 
----
-
-## 7. Escalation Decision Matrix
-
-| Condition | Escalation Type | Recommended Destination |
-|---|---|---|
-| Basic troubleshooting unsuccessful | Functional | Tier 2 Technical Support |
-| Advanced endpoint issue | Functional | Endpoint Support |
-| Domain controller failure | Functional | Systems Administration |
-| Network routing failure | Functional | Network Administration |
-| Microsoft 365 administrative issue | Functional | Microsoft 365 Administration |
-| Azure infrastructure failure | Functional | Cloud Administration |
-| Suspected account compromise | Security / Functional | Information Security |
-| Critical business outage | Functional + Hierarchical | Technical Team + IT Management |
-| Missing administrative permissions | Functional | Authorized Administrator |
-| Resource or authority conflict | Hierarchical | Service Desk Coordinator / IT Management |
-| Service target at risk | Functional or Hierarchical | Responsible Support Team / Coordinator |
-
-The destination should reflect the actual support structure and configured assignment groups.
-
----
-
-## 8. Escalation Procedure
+## 7. Escalation Procedure
 
 ### Step 1 — Review the Ticket
 
@@ -326,15 +277,6 @@ Open the ticket and review:
 ### Step 2 — Confirm Initial Troubleshooting
 
 Review the troubleshooting already completed.
-
-Examples:
-
-- Connectivity testing
-- Authentication verification
-- Service availability checks
-- Event Log review
-- Error message investigation
-- Relevant knowledge article procedures
 
 Do not delay urgent escalation merely to complete routine troubleshooting.
 
@@ -484,9 +426,7 @@ When the technical issue is resolved:
 
 **Expected Result:** The ticket is resolved and documented according to the applicable process.
 
----
-
-## 9. Escalation Workflow
+## 8. Escalation Workflow
 
 ```text
 Incoming IT Ticket
@@ -537,9 +477,7 @@ Can Service Desk Resolve?
 
 Urgent or security-related incidents may bypass normal troubleshooting and routing steps when immediate escalation is required.
 
----
-
-## 10. Priority-Based Escalation
+## 9. Priority-Based Escalation
 
 Escalation requirements may vary according to ticket priority.
 
@@ -587,20 +525,9 @@ For standard and low-priority tickets:
 4. Document findings.
 5. Continue normal ticket monitoring.
 
----
-
-## 11. Security Escalation
+## 10. Security Escalation
 
 Security-related issues require additional handling because they may involve confidentiality, integrity, or availability risks.
-
-### Security Escalation Examples
-
-- Suspected credential theft
-- Unauthorized account access
-- Malware infection
-- Suspicious administrative activity
-- Potential data exposure
-- Lost or stolen company device
 
 ### Security Escalation Procedure
 
@@ -623,40 +550,7 @@ Security-related issues require additional handling because they may involve con
 
 **Related Practice:** Information Security Management
 
----
-
-## 12. Escalation vs. Change Enablement
-
-Escalation and Change Enablement are different processes.
-
-### Escalation
-
-Obtains additional expertise, authority, or coordination.
-
-### Change Enablement
-
-Assesses and controls modifications to services or infrastructure.
-
-### Example
-
-A Service Desk technician escalates a DNS service failure to Systems Administration.
-
-During troubleshooting, the administrator determines that a configuration modification is required.
-
-The work may involve:
-
-1. Incident escalation
-2. Technical investigation
-3. Change assessment, when applicable
-4. Authorized implementation
-5. Service validation
-6. Incident resolution
-
-Escalation does not automatically authorize infrastructure changes.
-
----
-
-## 13. Escalation Documentation Standards
+## 11. Escalation Documentation Standards
 
 Every escalation should include sufficient information for the receiving team to continue the work.
 
@@ -728,161 +622,7 @@ Avoid statements such as:
 
 Instead, describe what was tested, the observed results, and why further assistance is required.
 
----
-
-## 14. Example Escalation Scenarios
-
-### Scenario 1 — Active Directory Replication Failure
-
-**Ticket Type:** Incident  
-**Affected Service:** IT-SVC-001 — Identity & Access Management  
-**Technical Category:** Active Directory  
-**Subcategory:** Replication
-
-#### Situation
-
-A technician identifies replication errors between DC01 and DC02.
-
-#### Initial Troubleshooting
-
-The technician:
-
-- Confirms domain controller connectivity.
-- Reviews relevant Event Logs.
-- Checks replication health using approved diagnostic tools.
-- Records the errors observed.
-
-#### Escalation Trigger
-
-The issue requires specialized Active Directory infrastructure administration.
-
-#### Escalation
-
-**Type:** Functional  
-**Destination:** Tier 3 — Systems Administration
-
-#### Expected Outcome
-
-The administrator investigates replication health, identifies the cause, performs authorized corrective actions, and validates replication.
-
----
-
-### Scenario 2 — Microsoft 365 Administrative Permission
-
-**Ticket Type:** Service Request  
-**Affected Service:** IT-SVC-003 — Microsoft 365 & Collaboration  
-**Technical Category:** Microsoft 365  
-**Subcategory:** Licensing
-
-#### Situation
-
-An employee requires a license assignment that the Service Desk technician is not authorized to perform.
-
-#### Escalation Trigger
-
-The technician lacks the required administrative permissions.
-
-#### Escalation
-
-**Type:** Functional  
-**Destination:** Microsoft 365 Administration
-
-#### Expected Outcome
-
-An authorized administrator verifies the request and approval requirements, then completes the assignment if permitted.
-
-**Important:** Escalation does not replace any required business approval.
-
----
-
-### Scenario 3 — Departmental Network Outage
-
-**Ticket Type:** Incident  
-**Affected Service:** IT-SVC-004 — Network Connectivity  
-**Technical Category:** Networking  
-**Subcategory:** Network Connectivity
-
-#### Situation
-
-Employees in the Sales department cannot access internal network resources.
-
-#### Initial Troubleshooting
-
-The Service Desk:
-
-- Confirms multiple employees are affected.
-- Checks workstation network configurations.
-- Performs connectivity tests.
-- Documents observed failures.
-
-#### Escalation Trigger
-
-The issue appears to involve network infrastructure beyond the Service Desk's responsibilities.
-
-#### Escalation
-
-**Type:** Functional  
-**Destination:** Network Administration
-
-#### Expected Outcome
-
-The network administrator investigates the affected infrastructure and restores connectivity.
-
----
-
-### Scenario 4 — Suspected Account Compromise
-
-**Ticket Type:** Incident / Security-Related  
-**Affected Service:** IT-SVC-006 — Information Security  
-**Technical Category:** Information Security  
-**Subcategory:** Account Compromise
-
-#### Situation
-
-An employee reports unexpected account activity.
-
-#### Escalation Trigger
-
-Potential unauthorized access requires specialized security assessment.
-
-#### Escalation
-
-**Type:** Security / Functional  
-**Destination:** Information Security
-
-#### Expected Outcome
-
-Authorized personnel investigate the activity and follow approved containment, recovery, and documentation procedures.
-
----
-
-### Scenario 5 — Critical Authentication Outage
-
-**Ticket Type:** Incident  
-**Affected Service:** IT-SVC-001 — Identity & Access Management  
-**Technical Category:** Active Directory  
-**Subcategory:** Authentication Failure
-
-#### Situation
-
-Multiple departments are unable to authenticate to domain resources.
-
-#### Escalation Trigger
-
-Critical business services are disrupted.
-
-#### Escalation
-
-**Type:** Functional and Hierarchical  
-**Destination:** Systems Administration and appropriate IT management personnel
-
-#### Expected Outcome
-
-A coordinated technical response restores authentication services while maintaining communication with affected stakeholders.
-
----
-
-## 15. Escalation Errors to Avoid
+## 12. Escalation Errors to Avoid
 
 ### Error 1 — Escalating Without Documentation
 
@@ -926,9 +666,7 @@ A coordinated technical response restores authentication services while maintain
 
 **Correct:** Obtain required approvals through the applicable process.
 
----
-
-## 16. Escalation Quality Checklist
+## 13. Escalation Quality Checklist
 
 Before completing an escalation, verify:
 
@@ -950,9 +688,7 @@ Before completing an escalation, verify:
 - [ ] Ticket status updated
 - [ ] Follow-up requirements identified
 
----
-
-## 17. Escalation Performance Metrics
+## 14. Escalation Performance Metrics
 
 Escalation effectiveness may be evaluated using:
 
@@ -968,56 +704,9 @@ Escalation effectiveness may be evaluated using:
 | High-Priority Escalation Time | Measures escalation performance for urgent incidents |
 | Escalation-Related Service Target Breaches | Identifies service target failures associated with escalation |
 
-Metrics should be calculated from actual ticket records or clearly labeled simulated datasets.
+Metrics should be calculated from actual ticket records or clearly labeled emulated datasets.
 
----
-
-## 18. Integration With ITIL Practices
-
-| ITIL Practice | Relationship |
-|---|---|
-| Service Desk | Coordinates initial support and escalation |
-| Incident Management | Uses escalation to support service restoration |
-| Service Request Management | Routes requests requiring specialized fulfillment |
-| Knowledge Management | Provides troubleshooting and escalation guidance |
-| Problem Management | Investigates recurring or complex underlying issues |
-| Change Enablement | Controls applicable infrastructure modifications |
-| Monitoring and Event Management | Identifies events requiring technical escalation |
-| Service Configuration Management | Identifies affected infrastructure and dependencies |
-| Information Security Management | Handles security-related escalation |
-| Continual Improvement | Reviews escalation trends and identifies improvements |
-
----
-
-## 19. Related Procedures and Documentation
-
-### Service Desk
-
-- [Service Desk Overview](../README.md)
-- [Ticket Intake Procedure](Ticket-Intake.md)
-- [Ticket Categorization Procedure](Ticket-Categorization.md)
-- [Ticket Prioritization Procedure](Ticket-Prioritization.md)
-
-### ITIL Practices
-
-- [Incident Management](../../Incident-Management/)
-- [Service Request Management](../../Service-Request-Management/)
-- [Problem Management](../../Problem-Management/)
-- [Change Enablement](../../Change-Enablement/)
-- [Monitoring and Event Management](../../Monitoring-and-Event-Management/)
-- [Service Configuration Management](../../Service-Configuration-Management/)
-- [Information Security Management](../../Information-Security-Management/)
-- [Continual Improvement](../../Continual-Improvement/)
-
-### Organization Documentation
-
-- [Company Overview](../../Company-Overview.md)
-- [IT Service Catalog](../../Service-Catalog.md)
-- [Operational Scenarios](../../Scenarios/)
-
----
-
-## 20. Procedure Review
+## 25. Procedure Review
 
 This procedure should be reviewed when:
 
@@ -1035,15 +724,4 @@ This procedure should be reviewed when:
 | Version | Description |
 |---|---|
 | 1.0 | Initial ticket escalation procedure |
-
----
-
-## Portfolio Disclaimer
-
-Technical Techno Tech is a fictional organization developed for hands-on IT training and professional portfolio development.
-
-Support tiers, organizational roles, escalation destinations, employee requests, and business scenarios may be simulated.
-
-Technical troubleshooting, administrative actions, ticketing configurations, and validation results are documented based on hands-on lab activities where indicated.
-
-This procedure demonstrates ITIL-aligned Service Desk escalation, technical support coordination, communication, and incident handling rather than employment experience within an actual production organization.
+| 1.1 | Remove unnecessary information |

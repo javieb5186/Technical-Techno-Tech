@@ -4,11 +4,9 @@
 **Department:** Internal IT / Service Desk  
 **Document Type:** Standard Operating Procedure (SOP)  
 **Procedure ID:** SOP-SD-002  
-**Version:** 1.0  
+**Version:** 1.1  
 **Status:** Draft — Lab Procedure  
 **ITIL Practices:** Service Desk, Incident Management, Service Request Management
-
----
 
 ## 1. Purpose
 
@@ -30,8 +28,6 @@ The procedure supports:
 
 **Key Principle:** Every ticket should be categorized according to the type of work required, the affected IT service, and the underlying technical area.
 
----
-
 ## 2. Scope
 
 This procedure applies to all incoming IT support tickets received by Technical Techno Tech's internal Service Desk.
@@ -48,13 +44,9 @@ Tickets may originate from:
 
 This procedure applies regardless of the ticketing platform used.
 
-### Supported Ticketing Platforms
+**Supported Ticketing Platform**
 
-- Jira Service Management — Planned primary ITSM platform
-
-Only platforms actually configured during a lab exercise should be identified as operational.
-
----
+- Jira Service Management — primary ITSM platform
 
 ## 3. Roles and Responsibilities
 
@@ -100,9 +92,7 @@ Responsible for:
 - Reviewing ticket reporting
 - Recommending category improvements
 
-**Lab Note:** These responsibilities represent simulated organizational roles. A single learner may perform multiple roles during an exercise.
-
----
+**Lab Note:** These responsibilities represent emulated organizational roles. A single learner may perform multiple roles during an exercise.
 
 ## 4. Ticket Categorization Structure
 
@@ -154,8 +144,6 @@ Determine Assignment Group
 Validate and Save Categorization
 ```
 
----
-
 ## 5. Ticket Type Classification
 
 The first step is determining the type of work represented by the ticket.
@@ -163,14 +151,6 @@ The first step is determining the type of work represented by the ticket.
 ### 5.1 Incident
 
 An incident is an unplanned interruption to a service or a reduction in service quality.
-
-Examples:
-
-- Employee cannot access a shared folder.
-- Domain authentication fails.
-- Network connectivity is unavailable.
-- Outlook stops working.
-- A Windows service unexpectedly stops.
 
 **Objective:** Restore normal service.
 
@@ -180,15 +160,6 @@ Examples:
 
 A service request is a request from a user or authorized representative for a predefined service action.
 
-Examples:
-
-- Create a new employee account.
-- Grant access to a shared folder.
-- Install approved software.
-- Reset a password.
-- Provision a workstation.
-- Complete employee onboarding.
-
 **Objective:** Fulfill an authorized request.
 
 **Related Practice:** Service Request Management
@@ -196,14 +167,6 @@ Examples:
 ### 5.3 Security-Related Ticket
 
 Security-related tickets involve potential risks to organizational information or systems.
-
-Examples:
-
-- Suspected account compromise
-- Unauthorized access
-- Malware detection
-- Suspicious authentication activity
-- Lost company device
 
 Security-related work may be classified as an incident or another appropriate work type.
 
@@ -251,20 +214,6 @@ Select the service based on:
 
 The affected service may differ from the technical component causing the issue.
 
-### Example
-
-An employee cannot sign in to their workstation because a domain controller is unavailable.
-
-**Affected Service:** Identity & Access Management
-
-**Technical Category:** Active Directory
-
-**Affected Infrastructure:** Domain Controller
-
-The underlying technical cause may be updated after investigation.
-
----
-
 ## 7. Technical Categories
 
 Technical categories identify the technology or infrastructure area associated with the ticket.
@@ -287,8 +236,6 @@ Used for issues involving on-premises directory services.
 - Domain Controller
 - Replication
 
-**Example:** Employee cannot authenticate to the domain.
-
 ---
 
 ### Category 2 — Microsoft Entra ID
@@ -307,8 +254,6 @@ Used for cloud identity and access management.
 - Sign-In Issue
 - Identity Configuration
 
-**Example:** Employee cannot complete Microsoft Entra ID authentication.
-
 ---
 
 ### Category 3 — Microsoft 365
@@ -326,8 +271,6 @@ Used for Microsoft 365 applications and administration.
 - Application Access
 - Collaboration
 - Service Availability
-
-**Example:** Employee cannot access Outlook.
 
 ---
 
@@ -349,8 +292,6 @@ Used for workstations and managed devices.
 - Hardware
 - Peripheral Device
 
-**Example:** Employee workstation fails to install an approved application.
-
 ---
 
 ### Category 5 — Networking
@@ -370,8 +311,6 @@ Used for network connectivity and infrastructure issues.
 - Firewall
 - VPN
 - Network Performance
-
-**Example:** Workstation cannot reach the default gateway.
 
 ---
 
@@ -393,30 +332,9 @@ Used for server operating systems and infrastructure administration.
 - Recovery
 - Server Configuration
 
-**Example:** Windows Server DNS service is unavailable.
-
 ---
 
-### Category 7 — Virtualization
-
-Used for virtual machine infrastructure.
-
-**Subcategories:**
-
-- Hyper-V
-- Virtual Machine Deployment
-- Virtual Machine Configuration
-- Virtual Networking
-- Virtual Storage
-- Resource Allocation
-- Virtual Machine Availability
-- Hypervisor Administration
-
-**Example:** Virtual machine cannot connect to the lab network.
-
----
-
-### Category 8 — Cloud Infrastructure
+### Category 7 — Cloud Infrastructure
 
 Used for cloud infrastructure resources.
 
@@ -430,11 +348,9 @@ Used for cloud infrastructure resources.
 - Cloud Configuration
 - Resource Availability
 
-**Example:** Azure virtual machine is unreachable.
-
 ---
 
-### Category 9 — Information Security
+### Category 8 — Information Security
 
 Used for security-related issues and requests.
 
@@ -451,11 +367,9 @@ Used for security-related issues and requests.
 - Security Configuration
 - Security Monitoring
 
-**Example:** Multiple suspicious sign-in attempts are detected.
-
 ---
 
-### Category 10 — Employee IT Lifecycle
+### Category 9 — Employee IT Lifecycle
 
 Used for employee lifecycle activities.
 
@@ -470,10 +384,6 @@ Used for employee lifecycle activities.
 - Access Modification
 - License Assignment
 - License Removal
-
-**Example:** HR requests IT onboarding for a new employee.
-
----
 
 ## 8. Ticket Categorization Procedure
 
@@ -604,28 +514,7 @@ If necessary, document why the classification was chosen.
 
 **Expected Result:** The ticket is ready for troubleshooting, fulfillment, or escalation.
 
----
-
-## 9. Categorization Decision Guide
-
-| User Statement | Ticket Type | Service | Category | Subcategory |
-|---|---|---|---|---|
-| "I forgot my password." | Service Request | Identity & Access | Active Directory | Password Reset |
-| "My account suddenly stopped working." | Incident | Identity & Access | Active Directory | Authentication Failure |
-| "I need access to the HR folder." | Service Request | Identity & Access | Active Directory | Group Membership |
-| "Outlook keeps crashing." | Incident | Microsoft 365 | Microsoft 365 | Outlook |
-| "My laptop needs software installed." | Service Request | Endpoint Management | Endpoint Management | Application Installation |
-| "I cannot connect to Wi-Fi." | Incident | Network Connectivity | Networking | Wireless Connectivity |
-| "Our DNS server is down." | Incident | Server & Infrastructure | Windows Server | DNS Server |
-| "A new employee starts Monday." | Service Request | Employee IT Lifecycle | Employee IT Lifecycle | Employee Onboarding |
-| "Someone may have accessed my account." | Incident / Security Review | Information Security | Information Security | Account Compromise |
-| "My virtual machine will not start." | Incident | Server & Infrastructure | Virtualization | Virtual Machine Availability |
-
-These are example classifications. Final categorization depends on the actual circumstances.
-
----
-
-## 10. Categorization vs. Prioritization
+## 9. Categorization vs. Prioritization
 
 Categorization and prioritization are separate activities.
 
@@ -646,28 +535,7 @@ Determines:
 - How urgently is action required?
 - How should work be scheduled?
 
-### Example
-
-**Ticket:** Outlook is unavailable.
-
-**Categorization:**
-
-- Ticket Type: Incident
-- Service: Microsoft 365 & Collaboration
-- Category: Microsoft 365
-- Subcategory: Outlook
-
-**Prioritization:**
-
-- Impact: Determined by the number of affected users and business consequences
-- Urgency: Determined by time sensitivity and available workarounds
-- Priority: Assigned using the organization's priority policy
-
-A ticket's category does not automatically determine its priority.
-
----
-
-## 11. Recategorization
+## 10. Recategorization
 
 Ticket categorization may change as additional information becomes available.
 
@@ -678,26 +546,6 @@ Ticket categorization may change as additional information becomes available.
 - The request was incorrectly classified.
 - The affected service was misidentified.
 - A ticket was routed to the wrong support group.
-
-### Example
-
-**Initial Classification:**
-
-- Service: Network Connectivity
-- Category: Networking
-- Subcategory: DNS Resolution
-
-**Investigation Finding:**
-
-The issue is caused by an unavailable DNS service on a Windows Server.
-
-**Updated Classification:**
-
-- Service: Server & Infrastructure Services, if this is the primary service being managed
-- Category: Windows Server
-- Subcategory: DNS Server
-
-The original employee-facing impact should remain documented even if the technical classification changes.
 
 ### Recategorization Procedure
 
@@ -712,7 +560,7 @@ Avoid unnecessary reassignment when the current technician can appropriately res
 
 ---
 
-## 12. Categorization Errors
+## 11. Categorization Errors
 
 Common errors include:
 
@@ -748,7 +596,7 @@ Common errors include:
 
 ---
 
-## 13. Ticket Categorization Quality Checklist
+## 12. Ticket Categorization Quality Checklist
 
 Before completing categorization, verify:
 
@@ -766,7 +614,7 @@ Before completing categorization, verify:
 
 ---
 
-## 14. Performance Metrics
+## 13. Performance Metrics
 
 Categorization effectiveness may be evaluated using:
 
@@ -783,50 +631,7 @@ Categorization effectiveness may be evaluated using:
 
 These metrics can support Continual Improvement initiatives.
 
----
-
-## 15. Integration With ITIL Practices
-
-| Practice | Relationship |
-|---|---|
-| Service Desk | Performs initial ticket categorization |
-| Incident Management | Handles unplanned service interruptions |
-| Service Request Management | Handles predefined service requests |
-| Knowledge Management | Provides category-specific troubleshooting guidance |
-| Problem Management | Uses incident trends to identify underlying issues |
-| Change Enablement | Handles applicable controlled modifications |
-| Monitoring and Event Management | Provides event information for classification |
-| Service Configuration Management | Identifies affected infrastructure components |
-| Information Security Management | Supports security-related classification and escalation |
-| Continual Improvement | Uses ticket trends to improve service delivery |
-
----
-
-## 16. Related Procedures and Documentation
-
-### Service Desk
-
-- [Service Desk Overview](../README.md)
-- [Ticket Intake Procedure](Ticket-Intake.md)
-
-### ITIL Practices
-
-- [Incident Management](../../Incident-Management/)
-- [Service Request Management](../../Service-Request-Management/)
-- [Knowledge Management](../../Knowledge-Management/)
-- [Problem Management](../../Problem-Management/)
-- [Information Security Management](../../Information-Security-Management/)
-- [Continual Improvement](../../Continual-Improvement/)
-
-### Organization Documentation
-
-- [Company Overview](../../Company-Overview.md)
-- [IT Service Catalog](../../Service-Catalog.md)
-- [Operational Scenarios](../../Scenarios/)
-
----
-
-## 17. Procedure Review
+## 14. Procedure Review
 
 This procedure should be reviewed when:
 
@@ -843,15 +648,4 @@ This procedure should be reviewed when:
 | Version | Description |
 |---|---|
 | 1.0 | Initial ticket categorization procedure |
-
----
-
-## Portfolio Disclaimer
-
-Technical Techno Tech is a fictional organization developed for hands-on IT training and professional portfolio development.
-
-Employee requests, support groups, organizational responsibilities, and ticket examples may be simulated.
-
-Ticket classifications, technical investigations, platform configurations, and operational results are documented based on hands-on lab activities where indicated.
-
-This procedure demonstrates ITIL-aligned Service Desk categorization, technical classification, ticket routing, and IT service management knowledge rather than employment experience within an actual production organization.
+| 1.1 | Remove unneccesary information |

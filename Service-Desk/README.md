@@ -2,15 +2,13 @@
 
 ## Overview
 
-The Service Desk serves as the primary point of contact between employees and the Internal IT Department at **Technical Techno Tech (TTT)**, a fictional technology solutions company.
+The Service Desk serves as the **primary point of contact** between employees and the Internal IT Department at Technical Techno Tech (TTT), a fictional technology solutions company.
 
-The Service Desk provides a centralized function for receiving, recording, coordinating, and communicating IT support requests and service-related issues.
+The Service Desk provides a **centralized function for receiving, recording, coordinating, and communicating IT support requests and service-related issues**.
 
 It supports employees across the organization's business divisions, including Information Technology, Software Development, Web Development, Game Development, and other business departments.
 
 The Service Desk operates using ITIL-aligned practices to support consistent service delivery, effective communication, and efficient IT operations.
-
----
 
 ## Purpose
 
@@ -30,8 +28,6 @@ Primary objectives include:
 - Promote consistent and professional customer service.
 
 The Service Desk focuses on effective communication and support coordination while working closely with other IT management practices.
-
----
 
 ## Scope of Service Desk Operations
 
@@ -67,8 +63,6 @@ Examples include:
 - Specialized engineering work outside Service Desk responsibilities
 
 These activities are coordinated with the appropriate IT personnel and management practices.
-
----
 
 ## Service Desk Responsibilities
 
@@ -145,23 +139,18 @@ Escalation may involve:
 
 The Service Desk may continue to coordinate communication and track progress after escalation.
 
----
-
 ## Support Channels
 
-Technical Techno Tech's simulated Service Desk may receive employee requests through the following channels:
+Technical Techno Tech's emulated Service Desk may receive employee requests through the following channels:
 
 | Support Channel | Purpose | Implementation Status |
 |---|---|---|
 | Jira Service Management Portal | Centralized ticket submission and tracking | Planned / In Development |
 | Email | Employee support requests and communication | Planned |
 | Chat | Direct communication and troubleshooting | Simulated |
-| Remote Support | Interactive technical assistance | Lab-Based |
 | Monitoring Alerts | Automated detection of technical events | Planned |
 
 The availability of these channels will be updated as the environment develops.
-
----
 
 ## Service Desk Ticket Workflow
 
@@ -194,7 +183,7 @@ The technician determines whether the issue should be handled as:
 
 The technician evaluates the business impact and urgency of the issue.
 
-Priority is assigned according to the organization's established prioritization procedure.
+Priority is assigned according to the organization's established [prioritization procedure](./Procedures/Ticket-Prioritization.md).
 
 ### 4. Initial Diagnosis & Assistance
 
@@ -232,8 +221,6 @@ Documentation should include:
 - User communication
 - Related records or knowledge articles
 
----
-
 ## Ticket Classification
 
 The Service Desk distinguishes between different types of IT work.
@@ -246,8 +233,6 @@ The Service Desk distinguishes between different types of IT work.
 | General Inquiry | A request for information or guidance | Employee asks how to use an approved application |
 
 Security reports are assessed and routed according to the appropriate security and incident response procedures.
-
----
 
 ## Ticket Prioritization
 
@@ -282,13 +267,11 @@ Ticket priority is determined by evaluating business impact and urgency.
 | P3 — Medium | Moderate disruption handled through normal support processes |
 | P4 — Low | Limited impact or low-urgency issue |
 
-This matrix is an example proposed for the simulated environment. Actual response targets and escalation rules will be established as Service Desk procedures are developed.
-
----
+Actual response targets and escalation rules will be established as Service Desk procedures are developed.
 
 ## Support Levels & Escalation
 
-Technical Techno Tech uses a simulated tiered support structure to demonstrate realistic IT responsibilities.
+Technical Techno Tech uses a emulated tiered support structure to demonstrate realistic IT responsibilities.
 
 | Support Level | Primary Responsibilities |
 |---|---|
@@ -320,9 +303,7 @@ Escalated tickets should include:
 - Reason for escalation
 - Actions required from the receiving team
 
-**Note:** Support tiers represent simulated responsibilities and do not imply that separate employees or teams are currently operating the lab.
-
----
+**Note:** Support tiers represent emulated responsibilities and do not imply that separate employees or teams are currently operating the lab.
 
 ## Supported IT Services
 
@@ -340,8 +321,6 @@ The Service Desk provides assistance for the internal IT services documented in 
 
 **Reference:** [IT Service Catalog](../Service-Catalog.md)
 
----
-
 ## IT Service Management Tools
 
 The following technologies support or may support Service Desk operations.
@@ -357,15 +336,6 @@ Intended as the primary IT service management platform for:
 - Employee communication
 - Automation
 - Reporting
-
-### Spiceworks
-
-Used for hands-on IT support exercises involving:
-
-- Ticket documentation
-- Troubleshooting records
-- Support activity tracking
-- Help Desk workflow practice
 
 ### Remote Support Tools
 
@@ -386,9 +356,7 @@ Examples include:
 - PowerShell
 - Windows networking utilities
 
-Tool availability and usage depend on the simulated environment and assigned permissions.
-
----
+Tool availability and usage depend on the emulated environment and assigned permissions.
 
 ## Knowledge Management Integration
 
@@ -409,46 +377,37 @@ When new technical information is discovered, the Service Desk may recommend cre
 
 **Reference:** [Knowledge Management](../Knowledge-Management/)
 
----
-
 ## ITIL Management Practice Relationships
 
-The Service Desk works alongside other ITIL-aligned management practices.
-
-| Management Practice | Relationship to Service Desk |
-|---|---|
-| Incident Management | Coordinates user communication and initial incident diagnosis |
-| Service Request Management | Receives and coordinates employee service requests |
-| Knowledge Management | Provides reusable troubleshooting and administrative guidance |
-| Problem Management | Identifies recurring issues and provides incident history |
-| Change Enablement | Coordinates communication regarding changes affecting users |
-| Monitoring and Event Management | Receives or responds to relevant monitoring alerts |
-| Service Configuration Management | References information about affected devices and services |
-| Information Security Management | Supports security reporting, access controls, and escalation |
-| Continual Improvement | Uses ticket trends and feedback to improve support processes |
+The Service Desk works alongside other ITIL-aligned management practices such as:
+- Incident Management
+- Service Request Management
+- Knowledge Management
+- Problem Management
+- Change Enablement
+- Monitoring and Event Management
+- Service Configuration Management
+- Information Security Management
+- Continual Improvement
 
 The Service Desk is a point of contact and coordination function, not a mandatory approval stage for every IT activity.
-
----
 
 ## Service Desk Procedures
 
 Standardized procedures establish consistent support practices.
 
-| Procedure | Purpose | Status |
-|---|---|---|
-| [Ticket Intake](Procedures/Ticket-Intake.md) | Defines how employee contacts are received and documented | Planned |
-| [Ticket Categorization](Procedures/Ticket-Categorization.md) | Defines how tickets are classified | Planned |
-| [Ticket Prioritization](Procedures/Ticket-Prioritization.md) | Defines how impact, urgency, and priority are assessed | Planned |
-| [Ticket Escalation](Procedures/Ticket-Escalation.md) | Defines escalation requirements and responsibilities | Planned |
+| Procedure | Purpose |
+|---|---|
+| [Ticket Intake](Procedures/Ticket-Intake.md) | Defines how employee contacts are received and documented |
+| [Ticket Categorization](Procedures/Ticket-Categorization.md) | Defines how tickets are classified |
+| [Ticket Prioritization](Procedures/Ticket-Prioritization.md) | Defines how impact, urgency, and priority are assessed |
+| [Ticket Escalation](Procedures/Ticket-Escalation.md) | Defines escalation requirements and responsibilities |
 
 Procedures will be developed and tested as the Service Desk environment evolves.
 
----
-
 ## Service Desk Records
 
-The `Records/` directory contains supporting records of Service Desk activities that are not already documented in another management practice.
+The [`Records/` directory](./Records/) contains supporting records of Service Desk activities that are not already documented in another management practice.
 
 Examples may include:
 
@@ -477,8 +436,6 @@ Service-Desk/
 └── Records/
 ```
 
----
-
 ## Service Desk Performance & Improvement
 
 Service Desk performance may be evaluated using operational metrics such as:
@@ -497,8 +454,6 @@ Metrics will be introduced as sufficient ticket data becomes available.
 
 Findings may support improvement initiatives documented under [Continual Improvement](../10-Continual-Improvement/).
 
----
-
 ## Documentation Standards
 
 Service Desk documentation should:
@@ -515,32 +470,3 @@ Service Desk documentation should:
 10. Avoid including passwords, access tokens, or sensitive information.
 
 Documentation should be concise, professional, and understandable to other IT personnel.
-
----
-
-## Related Documentation
-
-- [Company Overview](../Company-Overview.md)
-- [IT Service Catalog](../Service-Catalog.md)
-- [Operational Scenarios](../Scenarios/)
-- [Incident Management](../Incident-Management/)
-- [Service Request Management](../Service-Request-Management/)
-- [Knowledge Management](../Knowledge-Management/)
-- [Problem Management](../Problem-Management/)
-- [Change Enablement](../Change-Enablement/)
-- [Service Configuration Management](../Service-Configuration-Management/)
-- [Information Security Management](../Information-Security-Management/)
-- [Continual Improvement](../Continual-Improvement/)
-- [Infrastructure Documentation](../Infrastructure/)
-
----
-
-## Portfolio Disclaimer
-
-Technical Techno Tech is a fictional organization developed for hands-on IT training and professional portfolio development.
-
-Service Desk operations, employees, support tiers, business requirements, and operational workflows are simulated.
-
-Technical troubleshooting and administrative activities are documented based on hands-on work performed in controlled lab environments.
-
-This documentation demonstrates IT support knowledge and practical technical skills rather than employment experience within an actual production organization.

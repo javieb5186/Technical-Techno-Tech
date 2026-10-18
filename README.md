@@ -2,7 +2,7 @@
 
 ## Project Overview
 
-Technical Techno Tech (TTT) is a hands-on IT infrastructure and service management lab designed to simulate the IT operations of a fictional enterprise. The project combines infrastructure administration, troubleshooting, networking, Microsoft technologies, and ITIL 4 service management practices.
+Technical Techno Tech (TTT) is a hands-on IT infrastructure and service management lab designed to emulate the IT operations of a fictional enterprise. The project combines infrastructure administration, troubleshooting, networking, Microsoft technologies, and ITIL 4 service management practices.
 
 ## Current Status
 
@@ -43,6 +43,16 @@ The repository is organized around the following areas:
 
 ## Important Note
 
-TTT is a fictional company used to structure a realistic technical lab. The infrastructure and configurations may be real lab resources, while business activities, employee scenarios, and service requests may be simulated.
+TTT is a fictional company used to structure a realistic technical lab. The infrastructure and configurations may be real lab resources, while business activities, employee scenarios, and service requests may be emulated.
 
 The repository will continue to evolve as archived projects are reviewed and the updated environment is developed.
+
+## Portfolio Disclaimer
+
+Technical Techno Tech is a fictional organization developed for hands-on IT training and professional portfolio development.
+
+Service Desk operations, employees, support tiers, business requirements, and operational workflows are emulated.
+
+Technical troubleshooting and administrative activities are documented based on hands-on work performed in controlled lab environments.
+
+This documentation demonstrates IT support knowledge and practical technical skills rather than employment experience within an actual production organization.

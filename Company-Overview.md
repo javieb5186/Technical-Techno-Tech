@@ -8,19 +8,15 @@
 **Environment:** Simulated Enterprise  
 **Primary Focus:** Technology Development, IT Services, and Digital Solutions
 
----
-
 ## About the Company
 
-Technical Techno Tech (TTT) is a simulated technology solutions company that provides a variety of technical services and digital solutions.
+Technical Techno Tech (TTT) is a emulated technology solutions company that provides a variety of technical services and digital solutions.
 
 The company specializes in multiple areas of technology, including information technology, software development, website development, game development, and technical consulting.
 
 Technical Techno Tech aims to provide reliable, secure, and scalable technology solutions that support business operations, improve productivity, and address technical challenges.
 
 As a multidisciplinary technology company, TTT relies on its internal IT infrastructure to support employees, development teams, business applications, and technology services.
-
----
 
 ## Business Divisions
 
@@ -89,8 +85,6 @@ Potential activities include:
 - Systems integration
 - Process improvement
 
----
-
 ## Internal IT Department
 
 The Internal IT Department supports the technology infrastructure and services required for Technical Techno Tech's business operations.
@@ -109,13 +103,11 @@ Its primary responsibilities include:
 
 The department uses ITIL-aligned management practices to establish consistent, repeatable IT service management workflows.
 
----
-
 ## IT Service Management Framework
 
 Technical Techno Tech uses ITIL concepts and management practices as a reference for organizing and managing internal IT services.
 
-The simulated IT environment focuses on ten management practices:
+The emulated IT environment focuses on ten management practices:
 
 1. Service Desk
 2. Incident Management
@@ -130,13 +122,11 @@ The simulated IT environment focuses on ten management practices:
 
 These practices provide a structured approach to service delivery, operational support, infrastructure administration, and improvement.
 
-The company's ITIL-aligned workflows are developed and refined as the simulated environment evolves.
-
----
+The company's ITIL-aligned workflows are developed and refined as the emulated environment evolves.
 
 ## Technology Environment
 
-Technical Techno Tech maintains a simulated IT infrastructure designed to support its internal business operations.
+Technical Techno Tech maintains a emulated IT infrastructure designed to support its internal business operations.
 
 Technologies used or planned for the environment include:
 
@@ -171,8 +161,6 @@ Technologies used or planned for the environment include:
 
 Technology adoption, configuration, and implementation are documented as projects are completed.
 
----
-
 ## Operational Objectives
 
 The Internal IT Department works toward the following objectives:
@@ -185,13 +173,11 @@ The Internal IT Department works toward the following objectives:
 6. **Scalability:** Develop infrastructure capable of supporting business growth.
 7. **Continual Improvement:** Evaluate and improve IT services, workflows, and technical capabilities.
 
----
-
 ## Project Environment & Scope
 
 Technical Techno Tech is a fictional company developed as part of a hands-on IT administration and service management portfolio.
 
-The environment is designed to simulate realistic corporate IT operations, including:
+The environment is designed to emulate realistic corporate IT operations, including:
 
 - Infrastructure deployment and configuration
 - Employee onboarding and offboarding
@@ -204,15 +190,13 @@ The environment is designed to simulate realistic corporate IT operations, inclu
 - Infrastructure monitoring
 - IT service management documentation
 
-Practical projects are based on technical learning objectives, simulated business requirements, and operational scenarios.
+Practical projects are based on technical learning objectives, emulated business requirements, and operational scenarios.
 
 Each project is intended to demonstrate the application of technical knowledge within a realistic organizational context.
 
----
-
 ## Documentation Approach
 
-The GitHub repository serves as the company's simulated internal IT documentation system.
+The GitHub repository serves as the company's emulated internal IT documentation system.
 
 Documentation is organized around ITIL-aligned management practices and includes:
 
@@ -225,12 +209,10 @@ Documentation is organized around ITIL-aligned management practices and includes
 
 The objective is to demonstrate both technical implementation and structured IT service management.
 
----
-
 ## Portfolio Disclaimer
 
 Technical Techno Tech is a fictional organization used for educational purposes and professional portfolio development.
 
-All business operations, employee accounts, service requests, incidents, and administrative workflows are simulated unless otherwise indicated.
+All business operations, employee accounts, service requests, incidents, and administrative workflows are emulated unless otherwise indicated.
 
 The repository documents hands-on technical work performed in controlled environments and does not represent production experience at an actual organization.

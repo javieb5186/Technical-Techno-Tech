@@ -4,11 +4,9 @@
 **Department:** Internal IT / Service Desk  
 **Document Type:** Standard Operating Procedure (SOP)  
 **Procedure ID:** SOP-SD-003  
-**Version:** 1.0  
+**Version:** 1.1 
 **Status:** Draft — Lab Procedure  
 **ITIL Practices:** Service Desk, Incident Management, Service Request Management
-
----
 
 ## 1. Purpose
 
@@ -28,8 +26,6 @@ The procedure supports:
 - Accurate service performance reporting
 
 **Key Principle:** Ticket priority should reflect business impact and urgency rather than the order in which requests are received or the job title of the requester.
-
----
 
 ## 2. Scope
 
@@ -55,8 +51,6 @@ Problem records, change records, and other ITSM work items may use separate prio
 | IT-SVC-005 | Server & Infrastructure Services |
 | IT-SVC-006 | Information Security |
 | IT-SVC-007 | Employee IT Lifecycle |
-
----
 
 ## 3. Roles and Responsibilities
 
@@ -112,9 +106,7 @@ Responsible for:
 - Reporting changes in impact
 - Providing information about available workarounds
 
-**Lab Note:** These roles are simulated. A single learner may perform multiple roles during an exercise.
-
----
+**Lab Note:** These roles are emulated. A single learner may perform multiple roles during an exercise.
 
 ## 4. Ticket Priority Fundamentals
 
@@ -147,10 +139,6 @@ Priority represents the relative importance assigned to the ticket based on the 
 Impact + Urgency = Priority
 ```
 
-This is a conceptual relationship, not a mathematical calculation.
-
----
-
 ## 5. Impact Assessment
 
 Impact measures how significantly an incident affects employees, services, and business operations.
@@ -163,34 +151,6 @@ Impact measures how significantly an incident affects employees, services, and b
 | Medium | Departmental / Multiple Users | A department or multiple employees experience meaningful disruption |
 | Low | Individual / Limited | A single employee or limited function is affected |
 
-### High Impact
-
-Examples:
-
-- Organization-wide authentication failure
-- Critical network infrastructure unavailable
-- Multiple departments unable to access essential systems
-- Major infrastructure outage
-- Critical business service unavailable
-
-### Medium Impact
-
-Examples:
-
-- Departmental shared folder unavailable
-- Several employees unable to access an application
-- Network connectivity failure affecting one department
-- A business service operating with significant limitations
-
-### Low Impact
-
-Examples:
-
-- Individual employee cannot access a noncritical application
-- Single workstation experiencing a limited issue
-- Minor software malfunction
-- Individual peripheral device failure
-
 ### Impact Assessment Questions
 
 1. How many employees are affected?
@@ -201,8 +161,6 @@ Examples:
 6. Are other systems dependent on the affected service?
 
 **Important:** The number of affected users is not the only measure of impact. A single-user issue may have high business impact if it prevents a critical operation.
-
----
 
 ## 6. Urgency Assessment
 
@@ -216,34 +174,6 @@ Urgency measures how quickly the issue requires attention.
 | Medium | Prompt | Timely action is needed, but immediate intervention is not essential |
 | Low | Routine | Work can follow normal scheduling |
 
-### High Urgency
-
-Examples:
-
-- Critical service outage
-- Imminent business deadline with no workaround
-- Rapidly worsening infrastructure failure
-- Security concern requiring immediate escalation
-- Significant operational disruption
-
-### Medium Urgency
-
-Examples:
-
-- Departmental application issue
-- Limited service degradation
-- Business task delayed but not completely blocked
-- Temporary workaround available
-
-### Low Urgency
-
-Examples:
-
-- Minor inconvenience
-- Noncritical application issue
-- Work can continue using another method
-- Routine issue without a significant deadline
-
 ### Urgency Assessment Questions
 
 1. How quickly must service be restored?
@@ -253,11 +183,9 @@ Examples:
 5. What happens if the issue remains unresolved?
 6. Does the issue present an immediate security or operational risk?
 
----
-
 ## 7. Priority Matrix
 
-Technical Techno Tech uses a proposed four-level priority model.
+Technical Techno Tech uses a four-level priority model.
 
 ### Impact and Urgency Matrix
 
@@ -266,8 +194,6 @@ Technical Techno Tech uses a proposed four-level priority model.
 | High Impact | P1 — Critical | P2 — High | P3 — Medium |
 | Medium Impact | P2 — High | P3 — Medium | P4 — Low |
 | Low Impact | P3 — Medium | P4 — Low | P4 — Low |
-
-This matrix represents an internal lab policy rather than a universal ITIL requirement.
 
 ### Priority Definitions
 
@@ -280,20 +206,11 @@ This matrix represents an internal lab policy rather than a universal ITIL requi
 
 Priority assignments should be reviewed when new information changes the impact or urgency assessment.
 
----
-
 ## 8. Priority Level Definitions
 
 ### P1 — Critical
 
 A P1 incident represents a critical business disruption requiring immediate coordination.
-
-#### Examples
-
-- Organization-wide authentication outage
-- Critical network failure affecting business operations
-- Major infrastructure outage
-- Complete loss of an essential business service
 
 #### Required Actions
 
@@ -313,13 +230,6 @@ A P1 incident represents a critical business disruption requiring immediate coor
 
 A P2 incident represents a significant disruption requiring expedited attention.
 
-#### Examples
-
-- Department-wide network outage
-- Multiple employees unable to authenticate
-- Critical application degraded
-- Important business function significantly affected
-
 #### Required Actions
 
 1. Confirm impact and urgency.
@@ -334,13 +244,6 @@ A P2 incident represents a significant disruption requiring expedited attention.
 ### P3 — Medium
 
 A P3 incident represents a standard operational issue requiring normal support handling.
-
-#### Examples
-
-- Individual employee unable to access an important application
-- Limited network connectivity issue
-- Workstation software failure
-- Service degradation with manageable impact
 
 #### Required Actions
 
@@ -357,13 +260,6 @@ A P3 incident represents a standard operational issue requiring normal support h
 
 A P4 incident represents a limited-impact issue that can be handled through routine support scheduling.
 
-#### Examples
-
-- Minor application inconvenience
-- Noncritical peripheral issue
-- Cosmetic software issue
-- Limited issue with an acceptable workaround
-
 #### Required Actions
 
 1. Assign P4 priority.
@@ -371,8 +267,6 @@ A P4 incident represents a limited-impact issue that can be handled through rout
 3. Schedule work according to operational availability.
 4. Document progress.
 5. Update the requester when appropriate.
-
----
 
 ## 9. Ticket Prioritization Procedure
 
@@ -463,12 +357,6 @@ Assigned Priority: P2 — High
 
 Record the reason for the priority assignment.
 
-#### Example
-
-**Priority:** P2 — High
-
-**Justification:** Multiple employees in the Sales department cannot access a required business application. The issue is preventing scheduled work, and no acceptable workaround is available.
-
 Avoid vague explanations such as:
 
 - "Very important"
@@ -538,8 +426,6 @@ Examples include:
 
 **Expected Result:** Priority remains aligned with current business impact and urgency.
 
----
-
 ## 10. Service Request Prioritization
 
 Service requests differ from incidents because they generally involve planned or predefined service fulfillment rather than unexpected service disruption.
@@ -556,15 +442,7 @@ Prioritization may depend on:
 - Resource availability
 - Service targets
 
-### Example
-
-**Request:** Provision a workstation for a new employee.
-
-The request may be scheduled according to the employee's start date and the organization's onboarding requirements.
-
-A routine service request should not automatically receive P1 priority because the requester asks for immediate completion.
-
-### Proposed Service Request Priority Guidelines
+### Service Request Priority Guidelines
 
 | Priority | General Criteria |
 |---|---|
@@ -575,19 +453,9 @@ A routine service request should not automatically receive P1 priority because t
 
 Service request fulfillment targets should be defined separately from incident restoration targets.
 
----
-
 ## 11. Security-Related Prioritization
 
 Security-related tickets require special consideration.
-
-Examples include:
-
-- Suspected account compromise
-- Malware detection
-- Unauthorized administrative access
-- Suspicious authentication activity
-- Lost or stolen company equipment
 
 ### Security Assessment Factors
 
@@ -605,8 +473,6 @@ A security concern may require immediate security escalation even when the norma
 Security escalation and ticket priority are related but separate decisions.
 
 Security incidents should follow applicable Information Security Management and incident response procedures.
-
----
 
 ## 12. Priority Escalation
 
@@ -632,28 +498,6 @@ Priority escalation occurs when the ticket's significance increases or specializ
 6. Notify the appropriate support function.
 7. Update the requester when appropriate.
 
-### Example
-
-**Initial Condition:**
-
-One employee cannot access a shared application.
-
-- Impact: Low
-- Urgency: Medium
-- Priority: P4
-
-**Updated Condition:**
-
-The entire department loses access, and an immediate business deadline is affected.
-
-- Impact: Medium
-- Urgency: High
-- Priority: P2
-
-**Action:** Increase priority to P2 and coordinate expedited investigation.
-
----
-
 ## 13. Priority Downgrading
 
 Priority may be reduced when business impact or urgency decreases.
@@ -676,8 +520,6 @@ Priority may be reduced when business impact or urgency decreases.
 
 Priority should not be reduced simply to improve performance reports or avoid escalation requirements.
 
----
-
 ## 14. Prioritization vs. Assignment
 
 Priority and assignment serve different purposes.
@@ -690,93 +532,7 @@ Determines how urgently the ticket should be addressed relative to other work.
 
 Determines which technician or support group is responsible for the ticket.
 
-### Example
-
-**Ticket:** Domain controller replication failure.
-
-**Priority:** Determined by actual business impact and urgency.
-
-**Assignment:** Systems Administration.
-
-A technically complex ticket is not automatically high priority.
-
-Similarly, a simple issue may require immediate attention if its business consequences are significant.
-
----
-
-## 15. Example Prioritization Scenarios
-
-### Scenario 1 — Organization-Wide Authentication Failure
-
-**Description:** Employees across the organization cannot authenticate to the domain.
-
-**Impact:** High  
-**Urgency:** High  
-**Priority:** P1 — Critical
-
-**Justification:** Critical authentication services are unavailable to the organization.
-
-**Action:** Immediate escalation and coordinated incident response.
-
----
-
-### Scenario 2 — Departmental Network Outage
-
-**Description:** The HR department cannot access internal network resources.
-
-**Impact:** Medium  
-**Urgency:** High  
-**Priority:** P2 — High
-
-**Justification:** Multiple employees are unable to perform time-sensitive business activities.
-
-**Action:** Expedited troubleshooting and network administration escalation.
-
----
-
-### Scenario 3 — Individual Application Failure
-
-**Description:** One employee cannot open a required application.
-
-**Impact:** Low  
-**Urgency:** High  
-**Priority:** P3 — Medium
-
-**Justification:** The issue affects one employee but prevents an immediate required task.
-
-**Action:** Standard support handling with attention to the time-sensitive requirement.
-
----
-
-### Scenario 4 — Minor Peripheral Issue
-
-**Description:** One employee's secondary monitor intermittently disconnects, but work can continue.
-
-**Impact:** Low  
-**Urgency:** Low  
-**Priority:** P4 — Low
-
-**Justification:** Limited operational impact with an acceptable workaround.
-
-**Action:** Routine troubleshooting and scheduling.
-
----
-
-### Scenario 5 — New Employee Onboarding
-
-**Description:** HR requests account and workstation provisioning for a new employee starting next week.
-
-**Ticket Type:** Service Request
-
-**Priority:** P3 — Medium, under the proposed request guidelines
-
-**Justification:** Standard onboarding activity with a defined fulfillment deadline.
-
-**Action:** Verify authorization and schedule fulfillment before the employee's start date.
-
----
-
-## 16. Common Prioritization Errors
+## 15. Common Prioritization Errors
 
 ### Error 1 — Prioritizing Based on Job Title
 
@@ -814,9 +570,7 @@ Similarly, a simple issue may require immediate attention if its business conseq
 
 **Correct:** Follow the required escalation and communication procedures.
 
----
-
-## 17. Ticket Prioritization Quality Checklist
+## 16. Ticket Prioritization Quality Checklist
 
 Before completing prioritization, verify:
 
@@ -835,8 +589,6 @@ Before completing prioritization, verify:
 - [ ] Requester updated when appropriate
 - [ ] Priority reassessment planned if conditions change
 
----
-
 ## 18. Performance Metrics
 
 Ticket prioritization effectiveness may be evaluated using:
@@ -852,51 +604,7 @@ Ticket prioritization effectiveness may be evaluated using:
 | Service Target Compliance | Evaluates performance against applicable service targets |
 | Incorrect Priority Assignments | Identifies opportunities to improve assessments |
 
-Metrics should use actual ticket data or clearly labeled simulated datasets.
-
----
-
-## 19. Integration With ITIL Practices
-
-| ITIL Practice | Relationship |
-|---|---|
-| Service Desk | Performs initial impact and urgency assessment |
-| Incident Management | Uses priority to coordinate incident response |
-| Service Request Management | Applies request-specific fulfillment priorities |
-| Knowledge Management | Provides guidance for common issues |
-| Problem Management | Evaluates the significance of recurring incidents |
-| Change Enablement | Assesses risk and urgency for proposed changes |
-| Monitoring and Event Management | Provides alerts and service impact information |
-| Service Configuration Management | Identifies critical infrastructure dependencies |
-| Information Security Management | Evaluates security impact and escalation requirements |
-| Continual Improvement | Reviews prioritization effectiveness and performance trends |
-
----
-
-## 20. Related Procedures and Documentation
-
-### Service Desk
-
-- [Service Desk Overview](../README.md)
-- [Ticket Intake Procedure](Ticket-Intake.md)
-- [Ticket Categorization Procedure](Ticket-Categorization.md)
-
-### ITIL Practices
-
-- [Incident Management](../../Incident-Management/)
-- [Service Request Management](../../Service-Request-Management/)
-- [Monitoring and Event Management](../../Monitoring-and-Event-Management/)
-- [Service Configuration Management](../../Service-Configuration-Management/)
-- [Information Security Management](../../Information-Security-Management/)
-- [Continual Improvement](../../Continual-Improvement/)
-
-### Organization Documentation
-
-- [Company Overview](../../Company-Overview.md)
-- [IT Service Catalog](../../Service-Catalog.md)
-- [Operational Scenarios](../../Scenarios/)
-
----
+Metrics should use actual ticket data or clearly labeled emulated datasets.
 
 ## 21. Procedure Review
 
@@ -915,15 +623,4 @@ This procedure should be reviewed when:
 | Version | Description |
 |---|---|
 | 1.0 | Initial ticket prioritization procedure |
-
----
-
-## Portfolio Disclaimer
-
-Technical Techno Tech is a fictional organization developed for hands-on IT training and professional portfolio development.
-
-Business impact assessments, urgency classifications, service targets, support roles, and ticket scenarios may be simulated.
-
-Ticket prioritization activities, technical investigations, and operational outcomes are documented based on hands-on lab exercises where indicated.
-
-This procedure demonstrates ITIL-aligned Service Desk prioritization, business impact assessment, urgency evaluation, and escalation practices rather than employment experience within an actual production organization.
+| 1.1 | Remove unneccesary information |
