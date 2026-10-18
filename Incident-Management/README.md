@@ -36,38 +36,13 @@ Primary objectives include:
 
 ## Scope of Incident Management
 
-### In Scope
+**In Scope**
 
 Incident Management addresses unplanned interruptions or reductions in the quality of IT services.
 
-Examples include:
-
-- Windows workstation login failures
-- Active Directory authentication failures
-- DNS resolution issues
-- DHCP connectivity failures
-- Network outages or degraded connectivity
-- Microsoft 365 application disruptions
-- Microsoft Entra ID authentication issues
-- File share access failures
-- Group Policy processing failures
-- Server service failures
-- Endpoint application crashes
-- Unexpected loss of access to previously available resources
-
-### Out of Scope
+**Out of Scope**
 
 Activities that do not represent an unplanned service interruption are generally managed through other ITIL practices.
-
-Examples include:
-
-- New employee account provisioning
-- Requests for additional software
-- Routine access requests
-- Planned infrastructure upgrades
-- Scheduled system maintenance
-- Long-term root cause investigation
-- Preapproved configuration changes
 
 These activities are handled through Service Request Management, Change Enablement, Problem Management, or other appropriate practices.
 
