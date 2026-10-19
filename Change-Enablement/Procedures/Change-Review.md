@@ -4,11 +4,9 @@
 **Department:** Internal IT / Change Enablement  
 **Document Type:** Standard Operating Procedure (SOP)  
 **Procedure ID:** SOP-CE-003  
-**Version:** 1.0  
+**Version:** 1.1  
 **Status:** Draft — Lab Procedure  
 **ITIL Practice:** Change Enablement
-
----
 
 ## 1. Purpose
 
@@ -32,8 +30,6 @@ The procedure supports:
 - Continual improvement
 
 **Key Principle:** A completed implementation does not automatically mean a change was successful. The actual outcome must be evaluated against the approved objectives and success criteria.
-
----
 
 ## 2. Scope
 
@@ -81,86 +77,47 @@ The depth of review should reflect the change's risk, complexity, business impac
 
 Not every low-risk standard change requires a formal meeting or extensive Post-Implementation Review.
 
----
-
-## 3. ITIL 4 Change Enablement
-
-### Purpose
-
-The purpose of Change Enablement is to maximize the number of successful service and product changes by ensuring that risks have been properly assessed, authorizing changes to proceed, and managing the change schedule.
-
-### Important Definitions
-
-**Change:** The addition, modification, or removal of anything that could have a direct or indirect effect on services.
-
-**Change Authorization:** The decision permitting a proposed change to proceed under defined conditions.
-
-**Change Implementation:** The controlled execution of an authorized modification.
-
-**Post-Implementation Review (PIR):** An evaluation of a change after implementation to determine its outcome, effectiveness, impact, and lessons learned.
-
-**Rollback / Backout:** Actions taken to return to an acceptable previous state following an unsuccessful implementation.
-
-**Change-Related Incident:** An incident associated with a change, where the relationship may require investigation before causation is established.
-
-### Change Implementation vs. Change Review
-
-| Change Implementation | Change Review |
-|---|---|
-| Executes the authorized modification | Evaluates the implementation outcome |
-| Follows technical implementation steps | Compares results with approved objectives |
-| Performs immediate validation | Assesses overall effectiveness and stability |
-| Documents technical actions | Identifies lessons learned |
-| May initiate rollback | Evaluates rollback outcomes |
-| Updates implementation status | Determines closure readiness |
-
-A change review should consider both technical results and the effect on service delivery.
-
----
-
-## 4. Change Review Principles
+## 3. Change Review Principles
 
 Technical Techno Tech follows these principles during Change Review.
 
-### 4.1 Evidence-Based Evaluation
+### 3.1 Evidence-Based Evaluation
 
 Review findings must be supported by implementation records, validation results, monitoring data, or other relevant evidence.
 
-### 4.2 Compare Expected and Actual Results
+### 3.2 Compare Expected and Actual Results
 
 Evaluate the actual outcome against the original business justification and approved success criteria.
 
-### 4.3 Review the Entire Change Lifecycle
+### 3.3 Review the Entire Change Lifecycle
 
 Consider planning, authorization, implementation, validation, recovery, and communication.
 
-### 4.4 Identify Unintended Consequences
+### 3.4 Identify Unintended Consequences
 
 Review whether the change introduced unexpected service disruptions, performance issues, or security risks.
 
-### 4.5 Maintain Accountability
+### 3.5 Maintain Accountability
 
 Document responsibilities, decisions, findings, and required follow-up actions.
 
-### 4.6 Support Blameless Improvement
+### 3.6 Support Blameless Improvement
 
 Focus on technical, procedural, and organizational conditions rather than assigning personal blame.
 
-### 4.7 Preserve Traceability
+### 3.7 Preserve Traceability
 
 Link review findings to relevant incidents, problems, Configuration Items, and improvement records.
 
-### 4.8 Validate Before Closure
+### 3.8 Validate Before Closure
 
 Do not close a change as successful without sufficient evidence that the required objectives were achieved.
 
-### 4.9 Record Uncertainty
+### 3.9 Record Uncertainty
 
 If evidence is incomplete, document the limitation rather than assuming success.
 
----
-
-## 5. Roles and Responsibilities
+## 4. Roles and Responsibilities
 
 ### Change Owner
 
@@ -243,9 +200,7 @@ Responsible for:
 
 **Lab Note:** These roles represent simulated organizational responsibilities. A single learner may perform multiple roles during a controlled lab exercise.
 
----
-
-## 6. Change Review Requirements
+## 5. Change Review Requirements
 
 A Change Review should evaluate the following information.
 
@@ -268,13 +223,11 @@ A Change Review should evaluate the following information.
 | Lessons Learned | Opportunities for improvement |
 | Closure Recommendation | Whether the change is ready for closure |
 
----
-
-## 7. Change Review Types
+## 6. Change Review Types
 
 Technical Techno Tech uses a proposed risk-based review approach.
 
-### 7.1 Routine Review
+### 6.1 Routine Review
 
 Appropriate for successful, low-risk standard changes.
 
@@ -286,7 +239,7 @@ May involve:
 - Exception tracking
 - Documentation completion
 
-### 7.2 Formal Post-Implementation Review
+### 6.2 Formal Post-Implementation Review
 
 Appropriate for changes involving:
 
@@ -298,7 +251,7 @@ Appropriate for changes involving:
 
 May involve a documented review with relevant technical and service stakeholders.
 
-### 7.3 Failed Change Review
+### 6.3 Failed Change Review
 
 Required when an implementation:
 
@@ -307,7 +260,7 @@ Required when an implementation:
 - Requires rollback
 - Produces unacceptable security or operational consequences
 
-### 7.4 Emergency Change Review
+### 6.4 Emergency Change Review
 
 Evaluates:
 
@@ -318,7 +271,7 @@ Evaluates:
 - Whether retrospective documentation is complete
 - Whether permanent corrective actions remain necessary
 
-### Proposed Review Matrix
+### Review Matrix
 
 | Change Type / Outcome | Suggested Review |
 |---|---|
@@ -329,11 +282,7 @@ Evaluates:
 | Rolled-Back Change | Formal PIR |
 | Emergency Change | Formal retrospective review |
 
-These are proposed internal standards, not mandatory ITIL 4 requirements.
-
----
-
-## 8. Change Review Lifecycle
+## 7. Change Review Lifecycle
 
 ```text
 Change Implementation Completed
@@ -381,9 +330,7 @@ Change Implementation Completed
 
 A change may remain open while required follow-up actions or validation activities are incomplete.
 
----
-
-## 9. Change Review Procedure
+## 8. Change Review Procedure
 
 ### Step 1 — Open the Change Record
 
@@ -419,22 +366,6 @@ Possible statuses include:
 - Rolled Back
 - Inconclusive
 
-#### Example
-
-```text
-Change ID: CHG-001
-
-Implementation Status:
-Successful With Issues
-
-Outstanding Issue:
-Additional workstation validation required
-```
-
-Do not assume success solely because implementation steps were completed.
-
-**Expected Result:** The actual implementation status is identified.
-
 ### Step 3 — Review Original Change Objectives
 
 Identify the intended outcomes.
@@ -446,16 +377,6 @@ Questions:
 3. What technical condition was expected to change?
 4. What success criteria were approved?
 5. What services were expected to benefit?
-
-#### Example
-
-**Change:** Correct DHCP DNS configuration.
-
-**Objective:** Ensure affected workstations receive approved internal DNS server addresses.
-
-**Expected Benefit:** Improve domain controller discovery and reduce authentication failures.
-
-**Expected Result:** Original objectives are documented for comparison.
 
 ### Step 4 — Review Authorization and Scope Compliance
 
@@ -469,16 +390,6 @@ Review:
 - Implementation window
 - Required technical reviews
 - Security requirements
-
-#### Example
-
-**Approved Scope:** Modify DNS options for one DHCP scope.
-
-**Actual Implementation:** Confirm which scopes were modified using implementation evidence.
-
-If additional scopes were modified without authorization, record the deviation and assess its consequences.
-
-**Expected Result:** Authorization and scope compliance are evaluated.
 
 ### Step 5 — Review Implementation Documentation
 
@@ -537,36 +448,6 @@ Do not complete the Actual Result column without evidence.
 
 Review the diagnostic evidence collected after implementation.
 
-### Example — DNS Configuration
-
-```powershell
-Get-DnsClientServerAddress -AddressFamily IPv4
-```
-
-### Example — DNS Resolution
-
-```powershell
-nslookup dc01.homelab.local
-```
-
-### Example — Domain Controller Discovery
-
-```powershell
-nltest /dsgetdc:homelab.local
-```
-
-### Example — Active Directory Health
-
-```powershell
-dcdiag /q
-```
-
-### Example — Replication Health
-
-```powershell
-repadmin /replsummary
-```
-
 Only use tests relevant to the affected systems and approved objectives.
 
 **Expected Result:** Technical success criteria are evaluated using actual diagnostic evidence.
@@ -574,18 +455,6 @@ Only use tests relevant to the affected systems and approved objectives.
 ### Step 8 — Review Functional Validation
 
 Confirm that the affected service works as intended.
-
-#### Examples
-
-| Change | Functional Validation |
-|---|---|
-| DNS Configuration | Required internal names resolve |
-| Active Directory | Authorized users authenticate |
-| Group Policy | Intended policy applies correctly |
-| Software Deployment | Application launches and functions |
-| Firewall Rule | Required traffic is permitted without unintended access |
-| Network Routing | Required network destinations are reachable |
-| Microsoft 365 | Intended user workflow functions |
 
 Technical configuration accuracy does not automatically establish functional success.
 
@@ -606,14 +475,6 @@ Review:
 - Data access
 - Network segmentation
 
-#### Example
-
-A firewall change successfully permits an approved application connection.
-
-However, the review should also confirm that the rule does not unintentionally permit unrelated traffic.
-
-**Expected Result:** Relevant security implications are documented.
-
 ### Step 10 — Evaluate Service Impact
 
 Compare anticipated and actual service impact.
@@ -627,15 +488,6 @@ Review:
 5. Availability of alternatives
 6. Employee feedback
 7. Business process impact
-
-### Example
-
-| Impact Area | Planned | Actual |
-|---|---|---|
-| Downtime | No planned outage | To Be Determined |
-| Affected Users | Test workstation only | To Be Determined |
-| Service Degradation | None expected | To Be Determined |
-| Business Disruption | Minimal | To Be Determined |
 
 **Expected Result:** Actual service impact is documented.
 
@@ -657,14 +509,6 @@ Review:
 An incident occurring after a change does not automatically prove that the change caused it.
 
 Investigate the relationship before recording a confirmed causal connection.
-
-#### Example
-
-A workstation experiences authentication failures shortly after a DNS configuration change.
-
-The review should determine whether the change contributed to the failure.
-
-**Expected Result:** Relevant incidents are documented and appropriately linked.
 
 ### Step 12 — Review Rollback Activities
 
@@ -706,18 +550,6 @@ Review:
 - Maintenance window adherence
 - Delays
 - Scheduling conflicts
-
-#### Example
-
-**Planned Duration:** 30 minutes
-
-**Actual Duration:** 45 minutes
-
-**Variance:** 15 minutes
-
-The reviewer should determine whether the difference created an operational issue.
-
-**Expected Result:** Schedule performance is documented.
 
 ### Step 14 — Review Communication Effectiveness
 
@@ -830,14 +662,6 @@ Examples:
 - Submit a new Change request
 - Register a continual improvement opportunity
 
-### Example
-
-**Finding:** The implementation plan did not include verification of a dependent DNS server.
-
-**Improvement:** Add dependency validation to future DNS-related change procedures.
-
-**Expected Result:** Review findings produce actionable recommendations.
-
 ### Step 18 — Assign Follow-Up Ownership
 
 Each required follow-up action should identify:
@@ -849,23 +673,13 @@ Each required follow-up action should identify:
 - Related record
 - Completion criteria
 
-#### Example
-
-| Action | Owner | Status |
-|---|---|---|
-| Update DNS change checklist | Systems Administration | Proposed |
-| Review monitoring requirements | Infrastructure Team | Proposed |
-| Update Knowledge Base article | Knowledge Management | Proposed |
-
-These assignments are illustrative.
-
 **Expected Result:** Required follow-up activities have clear ownership.
 
 ### Step 19 — Determine Closure Readiness
 
 Review whether the change can be closed.
 
-### Proposed Closure Criteria
+### Closure Criteria
 
 - Implementation outcome documented
 - Required validation completed
@@ -915,7 +729,7 @@ Document:
 
 Update the Change record according to the review outcome.
 
-### Proposed Statuses
+### Statuses
 
 - Implemented — Pending Review
 - Review in Progress
@@ -931,9 +745,7 @@ The status must reflect the actual outcome.
 
 **Expected Result:** The Change record accurately represents its lifecycle state.
 
----
-
-## 10. Standard Change Review
+## 9. Standard Change Review
 
 Standard changes are preauthorized and follow established procedures.
 
@@ -945,23 +757,7 @@ Standard changes are preauthorized and follow established procedures.
 - Detect recurring implementation issues.
 - Confirm documentation completeness.
 
-### Example
-
-An approved routine software deployment completes successfully.
-
-The review may consist of:
-
-1. Confirming deployment completion.
-2. Reviewing application functionality.
-3. Checking for unexpected incidents.
-4. Recording the outcome.
-5. Escalating exceptions.
-
-A formal meeting is not necessarily required.
-
----
-
-## 11. Normal Change Review
+## 10. Normal Change Review
 
 Normal changes should be reviewed according to their risk and impact.
 
@@ -983,9 +779,7 @@ A domain-wide Group Policy change may require additional review because it can a
 
 The review should confirm that the intended policy applies correctly and that unintended systems were not affected.
 
----
-
-## 12. Emergency Change Review
+## 11. Emergency Change Review
 
 Emergency changes should receive retrospective evaluation.
 
@@ -1000,22 +794,9 @@ Emergency changes should receive retrospective evaluation.
 7. Confirm required documentation.
 8. Identify remaining corrective actions.
 
-### Example
-
-An urgent firewall change is implemented to reduce exposure to a critical security threat.
-
-The review should determine:
-
-- Whether the immediate risk was addressed
-- Whether the rule matched the approved emergency scope
-- Whether legitimate services were affected
-- Whether additional permanent remediation is necessary
-
 Emergency changes should not be exempt from accountability or review.
 
----
-
-## 13. Failed Change Review
+## 12. Failed Change Review
 
 A failed change requires investigation of the unsuccessful outcome.
 
@@ -1051,9 +832,7 @@ A failed change should not automatically be classified as a Problem record.
 
 Problem Management is appropriate when further analysis of an actual or potential underlying cause is warranted.
 
----
-
-## 14. Change Review Evidence
+## 13. Change Review Evidence
 
 Review findings should be supported by appropriate evidence.
 
@@ -1103,9 +882,7 @@ Each item should identify:
 
 Do not fabricate diagnostic output or validation results.
 
----
-
-## 15. Post-Implementation Review Template
+## 14. Post-Implementation Review Template
 
 Use the following structure within the Change record or a supporting review document.
 
@@ -1168,114 +945,7 @@ Review Participants:
 23. Evidence References
 ```
 
----
-
-## 16. Example Change Review Scenario
-
-### Scenario — DHCP DNS Configuration Correction
-
-**Change ID:** CHG-001  
-**Change Type:** Normal  
-**Affected Service:** IT-SVC-004 — Network Connectivity  
-**Related Problem:** PRB-001  
-**Environment:** homelab.local
-
-### Business Context
-
-Domain-joined workstations rely on internal DNS services for domain controller discovery.
-
-A simulated Problem Management investigation identifies incorrect DNS server settings distributed through DHCP.
-
-A change is proposed to correct the DHCP DNS options.
-
-### Original Change Objective
-
-Configure the affected DHCP scope to distribute the approved internal DNS server addresses.
-
-### Approved DNS Server Design
-
-| Server | IP Address |
-|---|---|
-| DC01 | 10.20.10.10 |
-| DC02 | 10.20.10.11 |
-
-Actual server availability and configuration must be verified.
-
-### Proposed Review Requirements
-
-The reviewer should confirm:
-
-1. The correct DHCP scope was modified.
-2. The approved DNS server addresses were configured.
-3. A test workstation received the intended settings.
-4. Internal DNS resolution succeeded.
-5. Domain controller discovery succeeded.
-6. Authorized domain authentication worked.
-7. No unacceptable service impact occurred.
-8. Implementation documentation was completed.
-
-### Proposed Technical Validation
-
-**DNS Configuration**
-
-```powershell
-Get-DnsClientServerAddress -AddressFamily IPv4
-```
-
-**DNS Resolution**
-
-```powershell
-nslookup dc01.homelab.local
-```
-
-**Domain Controller Discovery**
-
-```powershell
-nltest /dsgetdc:homelab.local
-```
-
-**Functional Validation**
-
-Confirm successful authorized domain authentication.
-
-### Proposed Review Matrix
-
-| Review Area | Expected Result | Actual Result |
-|---|---|---|
-| Authorization | Appropriate authorization recorded | Pending |
-| Scope Compliance | Correct DHCP scope modified | Not Verified |
-| DNS Configuration | Approved DNS addresses distributed | Not Tested |
-| DNS Resolution | Required internal records resolve | Not Tested |
-| Domain Discovery | Domain controller located successfully | Not Tested |
-| Authentication | Authorized sign-in succeeds | Not Tested |
-| Service Impact | No unacceptable disruption | Not Assessed |
-| Documentation | Change record completed | Pending |
-
-### Potential Lessons Learned
-
-The following are examples of possible findings, not actual conclusions:
-
-- Improve pre-change DNS configuration validation.
-- Add DHCP scope verification to the implementation checklist.
-- Confirm both domain controller dependencies before implementation.
-- Expand post-change authentication testing.
-- Improve rollback documentation.
-
-### Review Status
-
-**Pending — Implementation and Validation Not Confirmed**
-
-### Closure Recommendation
-
-**Not Ready for Closure**
-
-The review cannot establish success until actual implementation evidence and validation results are available.
-
-**Scenario Status:** Illustrative Post-Implementation Review exercise. No implementation, approval, diagnostic result, or successful outcome is claimed.
-
----
-
-## 17. Change Review and Problem Management
+## 15. Change Review and Problem Management
 
 Change reviews may identify conditions requiring Problem Management.
 
@@ -1287,18 +957,6 @@ Change reviews may identify conditions requiring Problem Management.
 - Persistent configuration defects
 - Repeated rollback requirements
 
-### Example Relationship
-
-```text
-Change: CHG-001
-
-Review Finding:
-Recurring DNS configuration failure
-
-Potential Related Problem:
-PRB-001
-```
-
 The relationship should be supported by evidence.
 
 ### Important Distinction
@@ -1309,9 +967,7 @@ Problem Management investigates actual or potential underlying causes of inciden
 
 A review finding may initiate or contribute to a Problem investigation without replacing it.
 
----
-
-## 18. Change Review and Continual Improvement
+## 16. Change Review and Continual Improvement
 
 Change Review provides information for improving future change activities.
 
@@ -1326,34 +982,9 @@ Change Review provides information for improving future change activities.
 - Improved dependency documentation
 - Reduced change-related incidents
 
-### Example Improvement Record
-
-```text
-Improvement ID: IMP-001
-
-Source:
-Change Review
-
-Finding:
-Pre-change validation did not include all
-relevant DNS dependencies.
-
-Proposed Improvement:
-Update the DNS change checklist to include
-dependency validation.
-
-Owner:
-To Be Assigned
-
-Status:
-Proposed
-```
-
 Improvement records should be maintained through Continual Improvement when the finding warrants formal tracking.
 
----
-
-## 19. Change Review Documentation Standards
+## 17. Change Review Documentation Standards
 
 Review records must distinguish:
 
@@ -1381,19 +1012,9 @@ Recommended actions that have not yet been implemented.
 
 Actions that were actually performed and validated.
 
-### Example
-
-**Expected Result:** Domain controller discovery succeeds after correcting DNS configuration.
-
-**Actual Result:** Not yet tested.
-
-**Review Conclusion:** Insufficient evidence to confirm success.
-
 Do not describe a change as successful without supporting validation.
 
----
-
-## 20. Common Change Review Errors
+## 18. Common Change Review Errors
 
 ### Error 1 — Closing Immediately After Implementation
 
@@ -1455,9 +1076,7 @@ Do not describe a change as successful without supporting validation.
 
 **Correct:** Label simulated reviews and self-assessments accurately.
 
----
-
-## 21. Change Review Quality Checklist
+## 19. Change Review Quality Checklist
 
 Before completing a Change Review, verify:
 
@@ -1491,9 +1110,7 @@ Before completing a Change Review, verify:
 - [ ] Review method recorded
 - [ ] Final status accurately documented
 
----
-
-## 22. Change Review Performance Metrics
+## 20. Change Review Performance Metrics
 
 Change Review effectiveness may be evaluated using:
 
@@ -1514,80 +1131,7 @@ Change Review effectiveness may be evaluated using:
 
 Metrics should be based on actual records or clearly labeled simulated datasets.
 
----
-
-## 23. Integration With ITIL Practices
-
-| ITIL Practice | Relationship |
-|---|---|
-| Service Desk | Provides employee feedback and reports change-related incidents |
-| Incident Management | Investigates and restores services disrupted by changes |
-| Service Request Management | Provides feedback on changes affecting request fulfillment |
-| Knowledge Management | Updates technical procedures and recovery guidance |
-| Problem Management | Investigates recurring failures or underlying conditions identified during review |
-| Change Enablement | Evaluates implementation outcomes and determines closure readiness |
-| Monitoring and Event Management | Provides technical evidence and stability monitoring |
-| Service Configuration Management | Confirms Configuration Item records reflect implemented changes |
-| Information Security Management | Reviews security implications and unresolved risks |
-| Continual Improvement | Tracks improvements identified through change reviews |
-
----
-
-## 24. Related Procedures and Documentation
-
-### Change Enablement
-
-- [Change Enablement Overview](../README.md)
-- [Change Authorization](Change-Authorization.md)
-- [Change Implementation](Change-Implementation.md)
-- [Change Template](../../Templates/Change-Template.md)
-
-### Problem Management
-
-- [Problem Management Overview](../../Problem-Management/)
-- [Problem Identification](../../Problem-Management/Procedures/Problem-Identification.md)
-- [Root Cause Analysis](../../Problem-Management/Procedures/Root-Cause-Analysis.md)
-- [Known Error Management](../../Problem-Management/Procedures/Known-Error-Management.md)
-
-### Incident Management
-
-- [Incident Management Overview](../../Incident-Management/)
-- [Incident Investigation](../../Incident-Management/Procedures/Incident-Investigation.md)
-- [Incident Resolution](../../Incident-Management/Procedures/Incident-Resolution.md)
-- [Incident Closure](../../Incident-Management/Procedures/Incident-Closure.md)
-
-### Knowledge Management
-
-- [Knowledge Management Overview](../../Knowledge-Management/)
-- [Knowledge Article Lifecycle](../../Knowledge-Management/Procedures/Knowledge-Article-Lifecycle.md)
-
-### ITIL Practices
-
-- [Service Desk](../../01-Service-Desk/)
-- [Service Request Management](../../Service-Request-Management/)
-- [Monitoring and Event Management](../../Monitoring-and-Event-Management/)
-- [Service Configuration Management](../../Service-Configuration-Management/)
-- [Information Security Management](../../Information-Security-Management/)
-- [Continual Improvement](../../Continual-Improvement/)
-
-### Infrastructure Documentation
-
-- [Infrastructure Overview](../../Infrastructure/)
-- [Active Directory](../../Infrastructure/Active-Directory/)
-- [Windows Server](../../Infrastructure/Windows-Server/)
-- [Microsoft 365](../../Infrastructure/Microsoft-365/)
-- [Networking](../../Infrastructure/Networking/)
-- [Virtualization](../../Infrastructure/Virtualization/)
-
-### Organization Documentation
-
-- [Company Overview](../../Company-Overview.md)
-- [IT Service Catalog](../../Service-Catalog.md)
-- [Operational Scenarios](../../Scenarios/)
-
----
-
-## 25. Procedure Review
+## 21. Procedure Review
 
 This procedure should be reviewed when:
 
@@ -1606,21 +1150,4 @@ This procedure should be reviewed when:
 | Version | Description |
 |---|---|
 | 1.0 | Initial Change Review procedure |
-
----
-
-## Portfolio Disclaimer
-
-Technical Techno Tech is a fictional organization developed for hands-on IT training and professional portfolio development.
-
-Employee requests, organizational roles, business impact assessments, Change Advisory Board activities, review decisions, and operational scenarios may be simulated.
-
-Technical implementations, diagnostic commands, infrastructure configurations, validation results, rollback activities, and review findings are documented based on hands-on lab work where indicated.
-
-Expected results and hypothetical findings must not be represented as completed technical activities.
-
-Simulated approvals and reviews do not constitute independent organizational authorization or validation.
-
-GitHub publication does not imply production deployment, independent technical approval, or employment experience.
-
-This procedure demonstrates ITIL-aligned Change Enablement, Post-Implementation Review, change outcome evaluation, operational risk assessment, technical documentation, and continual improvement practices.
+| 1.1 | Remove unneccesary information |

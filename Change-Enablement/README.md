@@ -8,13 +8,11 @@ The practice ensures that changes are appropriately assessed, authorized, planne
 
 Changes may involve Windows Server, Active Directory Domain Services, Group Policy, Microsoft 365, Microsoft Entra ID, Microsoft Intune, Microsoft Azure, network infrastructure, virtualization, and other technologies supporting internal business operations.
 
-Technical Techno Tech applies ITIL-aligned Change Enablement principles through simulated business requirements, technical risk assessments, hands-on infrastructure changes, implementation planning, rollback procedures, and validation.
-
----
+Technical Techno Tech applies ITIL-aligned Change Enablement principles through emulated business requirements, technical risk assessments, hands-on infrastructure changes, implementation planning, rollback procedures, and validation.
 
 ## Purpose
 
-The purpose of Change Enablement is to maximize successful IT changes while minimizing unnecessary risks to business services.
+The purpose of Change Enablement is to maximize the number of successful service and product changes by ensuring that risks have been properly assessed, authorizing changes to proceed, and managing the change schedule.
 
 Primary objectives include:
 
@@ -32,8 +30,6 @@ Primary objectives include:
 - Review change outcomes and identify improvements.
 
 **Key Principle:** Change Enablement is not intended to prevent changes. It enables necessary changes to be implemented successfully while managing risk.
-
----
 
 ## Scope of Change Enablement
 
@@ -75,42 +71,20 @@ Some routine configuration activities may be managed as preauthorized standard c
 
 Not every technical action requires a separate change record.
 
----
+### Important Definitions
 
-## Change Definition
+**Change:** The addition, modification, or removal of anything that could have a direct or indirect effect on services.
 
+**Change Authorization:** The decision permitting a proposed change to proceed under defined conditions.
+
+**Change Implementation:** The controlled execution of an authorized modification.
+
+**Change Schedule:** Information used to plan changes and identify potential conflicts.
+
+**Rollback / Backout:** Actions taken to return to an acceptable previous state when implementation fails.
+
+**Post-Implementation Review (PIR):** An evaluation of the change's outcome, including its effectiveness, impact, and lessons learned.
 A **change** is the addition, modification, or removal of anything that could have a direct or indirect effect on services.
-
-### Examples
-
-| Situation | Classification |
-|---|---|
-| Deploying a new domain controller | Change |
-| Modifying a Group Policy affecting multiple workstations | Change |
-| Updating firewall rules | Change |
-| Reconfiguring DNS servers | Change |
-| Deploying a new Intune configuration policy | Change |
-| Resetting a verified user's password using an established procedure | Routine Service Request |
-| Investigating an unexpected network outage | Incident |
-| Investigating repeated DNS failures | Problem |
-
-### Change vs. Service Request
-
-A service request initiates an agreed service action.
-
-A change modifies something that may affect IT services.
-
-Some service requests involve standard changes, but not every request requires a separate change record.
-
-### Change vs. Incident
-
-Incident Management focuses on restoring disrupted services.
-
-Change Enablement manages the risks and authorization associated with modifying services or infrastructure.
-
-An incident may require a change to restore normal service.
-
----
 
 ## Change Types
 
@@ -129,12 +103,6 @@ Characteristics include:
 - Predictable outcomes
 - Appropriate validation
 
-Examples:
-
-- Deploying an approved standard workstation configuration
-- Performing a routine, preauthorized software deployment
-- Applying an established low-risk configuration update
-
 Standard changes do not require individual authorization each time when they remain within their approved scope.
 
 ### 2. Normal Change
@@ -149,14 +117,6 @@ Characteristics include:
 - Implementation planning
 - Validation requirements
 - Rollback planning when applicable
-
-Examples:
-
-- Deploying a new domain controller
-- Modifying domain-wide Group Policy
-- Implementing a new VLAN
-- Changing production DNS configurations
-- Deploying a new organization-wide Intune policy
 
 Normal changes may be low, medium, or high risk.
 
@@ -173,27 +133,17 @@ Characteristics include:
 - Necessary risk controls
 - Post-implementation review
 
-Examples:
-
-- Applying an urgent security configuration correction
-- Correcting a critical infrastructure failure
-- Implementing an urgent fix for a major service outage
-
 Emergency changes are not automatically exempt from authorization or documentation requirements.
-
----
 
 ## Change Classification Summary
 
-| Change Type | Risk Profile | Authorization | Example |
-|---|---|---|---|
-| Standard | Low and well understood | Preauthorized | Routine approved configuration deployment |
-| Normal | Varies by change | Appropriate change authority | New domain controller deployment |
-| Emergency | Urgent; risk varies | Expedited authorization | Critical infrastructure correction |
+| Change Type | Risk Profile | Authorization |
+|---|---|---|
+| Standard | Low and well understood | Preauthorized |
+| Normal | Varies by change | Appropriate change authority |
+| Emergency | Urgent; risk varies | Expedited authorization |
 
 The change type determines the appropriate workflow rather than the technical complexity alone.
-
----
 
 ## Change Enablement Responsibilities
 
@@ -263,9 +213,7 @@ The Service Desk may support Change Enablement by:
 - Linking incidents to recent changes
 - Providing feedback about user impact
 
-**Note:** These responsibilities represent simulated IT roles within the lab environment and do not imply that separate employees or teams are operating the environment.
-
----
+**Note:** These responsibilities represent emulated IT roles within the lab environment and do not imply that separate employees or teams are operating the environment.
 
 ## Change Enablement Lifecycle
 
@@ -423,8 +371,6 @@ The final record should identify:
 - Updated configuration documentation
 - Lessons learned
 
----
-
 ## Change Risk Assessment
 
 Risk assessment helps determine how a proposed change may affect IT services.
@@ -443,7 +389,7 @@ Potential factors include:
 - Availability of tested rollback procedures
 - Expected downtime
 
-### Example Risk Matrix
+### Risk Matrix
 
 | Impact / Likelihood | High Likelihood | Medium Likelihood | Low Likelihood |
 |---|---|---|---|
@@ -459,11 +405,7 @@ Potential factors include:
 | Medium | Moderate potential disruption requiring additional planning |
 | High | Significant potential business impact or difficult recovery |
 
-This matrix is a proposed model for the simulated environment.
-
 Risk level helps determine the necessary assessment and authorization, but it does not automatically determine whether a change is standard, normal, or emergency.
-
----
 
 ## Change Impact Assessment
 
@@ -480,36 +422,6 @@ Impact assessment identifies the services and users that may be affected by a ch
 7. What is the expected downtime?
 8. What happens if implementation fails?
 9. How will normal service be restored?
-
-### Example
-
-**Proposed Change:** Modify a domain-wide Group Policy.
-
-**Potentially Affected Components:**
-
-- Domain controllers
-- Domain-joined workstations
-- Organizational Units
-- User accounts
-- Computer accounts
-
-**Potential Risks:**
-
-- Incorrect policy application
-- Authentication or access restrictions
-- Application compatibility issues
-- Unexpected workstation configuration changes
-
-**Risk Mitigation:**
-
-- Review policy settings.
-- Test in a controlled OU.
-- Document existing configuration.
-- Confirm affected scope.
-- Prepare a rollback procedure.
-- Validate policy application after deployment.
-
----
 
 ## Change Authorization
 
@@ -534,13 +446,11 @@ Change records should identify:
 - Conditions or restrictions
 - Relevant risk considerations
 
-### Simulated Authorization
+### Emulated Authorization
 
-Within the Technical Techno Tech lab, business approvals and change authorities may be simulated.
+Within the Technical Techno Tech lab, business approvals and change authorities may be emulated.
 
-Simulated approvals must be clearly identified and must not be presented as actual production authorizations.
-
----
+Emulated approvals must be clearly identified and must not be presented as actual production authorizations.
 
 ## Change Scheduling & Communication
 
@@ -572,8 +482,6 @@ Affected stakeholders may need information about:
 
 The Service Desk may communicate planned changes to employees and receive reports of unexpected post-change issues.
 
----
-
 ## Implementation Planning
 
 Each applicable change should have a clear implementation plan.
@@ -595,8 +503,6 @@ Each applicable change should have a clear implementation plan.
 
 The depth of planning should be proportional to the change's risk and complexity.
 
----
-
 ## Backup & Rollback Planning
 
 Rollback planning helps restore the previous service state when implementation produces unacceptable results.
@@ -612,17 +518,6 @@ Rollback planning helps restore the previous service state when implementation p
 - What conditions should trigger rollback?
 - How will recovery be validated?
 
-### Examples
-
-| Technology | Potential Recovery Approach |
-|---|---|
-| Group Policy | Restore a verified GPO backup or previous settings |
-| Firewall Configuration | Restore a saved configuration |
-| DNS Configuration | Reapply documented previous settings |
-| Virtual Machine | Use an appropriate supported backup or recovery method |
-| Intune Policy | Revert settings or withdraw the deployment according to a tested plan |
-| Windows Server | Restore using a supported backup and recovery procedure |
-
 **Important:** Virtual machine snapshots are not substitutes for supported backup procedures. Domain controllers and other stateful systems require special consideration when planning recovery.
 
 ### Rollback Validation
@@ -634,8 +529,6 @@ After rollback, verify that:
 - Authentication and connectivity function as expected.
 - No additional service disruption remains.
 - The change record reflects the actual outcome.
-
----
 
 ## Change Validation
 
@@ -669,8 +562,6 @@ Potential validation methods include:
 
 Actual validation results should be documented within the individual change record.
 
----
-
 ## Emergency Change Management
 
 Emergency changes require an expedited workflow when delaying implementation presents significant risk.
@@ -703,8 +594,6 @@ Emergency changes should document:
 
 Emergency classification should not be used merely to avoid normal change controls.
 
----
-
 ## Change Status Definitions
 
 | Status | Description |
@@ -724,8 +613,6 @@ Emergency classification should not be used merely to avoid normal change contro
 | Cancelled | Change will not proceed |
 
 A completed change may still require documentation review before closure.
-
----
 
 ## Supported Technologies
 
@@ -764,12 +651,9 @@ Change Enablement activities may involve the following technologies.
 ### IT Service Management
 
 - Jira Service Management
-- Spiceworks
 - GitHub Documentation
 
 Technologies are included in individual change records according to their actual use.
-
----
 
 ## Change Enablement Procedures
 
@@ -786,9 +670,7 @@ The `Procedures/` directory contains repeatable operational instructions.
 | Change Validation | Defines post-implementation verification | Planned |
 | Change Closure | Defines review and documentation requirements | Planned |
 
-Procedures will be developed and refined as the simulated environment evolves.
-
----
+Procedures will be developed and refined as the emulated environment evolves.
 
 ## Change Records
 
@@ -836,71 +718,25 @@ Each change record follows the standardized [Change Template](../Templates/Chang
 
 Add changes to this register as they are documented. Remove placeholder entries until actual records exist.
 
----
-
 ## Integration With Incident Management
 
 Incidents may require changes to restore normal service.
-
-### Example
-
-**Incident:** Employees cannot authenticate because of an incorrect DNS configuration.
-
-**Incident Management:**
-
-- Investigates the service interruption.
-- Identifies the affected DNS configuration.
-- Coordinates service restoration.
-- Documents the incident outcome.
-
-**Change Enablement:**
-
-- Assesses the proposed configuration correction.
-- Identifies implementation risks.
-- Applies the appropriate authorization process.
-- Coordinates implementation and validation.
 
 An urgent correction may qualify for an emergency change if the defined criteria are met.
 
 **Reference:** [Incident Management](../Incident-Management/)
 
----
-
 ## Integration With Problem Management
 
 Problem investigations may identify permanent corrective actions requiring changes.
-
-### Example
-
-**Problem:** Recurring authentication failures caused by inconsistent DNS configuration.
-
-**Problem Management:**
-
-- Investigates repeated incidents.
-- Identifies the underlying cause.
-- Recommends a permanent correction.
-
-**Change Enablement:**
-
-- Evaluates the proposed correction.
-- Assesses risks and dependencies.
-- Coordinates authorization.
-- Manages implementation.
-- Validates the outcome.
 
 Problem Management may continue monitoring for recurrence after the change is completed.
 
 **Reference:** [Problem Management](../Problem-Management/)
 
----
-
 ## Integration With Service Request Management
 
 Some service requests require changes to infrastructure or service configurations.
-
-### Example
-
-**Service Request:** A department requests a new shared resource.
 
 If the request can be fulfilled using an established, authorized procedure, a separate change record may not be necessary.
 
@@ -908,45 +744,21 @@ If fulfillment requires a new shared infrastructure configuration with broader s
 
 **Reference:** [Service Request Management](../Service-Request-Management/)
 
----
-
 ## Integration With Service Configuration Management
 
 Changes may create, modify, or retire Configuration Items.
-
-Examples include:
-
-- Deploying a new domain controller
-- Modifying a server's IP configuration
-- Adding a network device
-- Updating firewall settings
-- Changing a cloud service configuration
-- Retiring a virtual machine
 
 Relevant Configuration Item records should be updated after successful implementation.
 
 **Reference:** [Service Configuration Management](../Service-Configuration-Management/)
 
----
-
 ## Integration With Knowledge Management
 
 Infrastructure changes may require updates to technical documentation.
 
-Examples include:
-
-- New administrative procedures
-- Updated troubleshooting instructions
-- Modified network configurations
-- Revised Group Policy settings
-- New server deployment instructions
-- Updated recovery procedures
-
 Knowledge articles should reflect the current supported environment.
 
 **Reference:** [Knowledge Management](../Knowledge-Management/)
-
----
 
 ## Integration With Information Security Management
 
@@ -968,26 +780,6 @@ High-risk security changes may require additional review or authorization.
 
 **Reference:** [Information Security Management](../Information-Security-Management/)
 
----
-
-## Integration With Other ITIL Practices
-
-| Management Practice | Relationship to Change Enablement |
-|---|---|
-| Service Desk | Coordinates user communication and receives post-change reports |
-| Incident Management | May require changes to restore disrupted services |
-| Service Request Management | May initiate standard or other authorized changes |
-| Knowledge Management | Maintains procedures affected by changes |
-| Problem Management | Recommends corrective changes to address underlying causes |
-| Monitoring and Event Management | Helps detect and evaluate post-change behavior |
-| Service Configuration Management | Tracks affected infrastructure and configuration updates |
-| Information Security Management | Evaluates security risks and controls |
-| Continual Improvement | Reviews change outcomes and identifies process improvements |
-
-Change Enablement supports controlled modifications across the organization's IT environment.
-
----
-
 ## Change Enablement Performance Metrics
 
 Change Enablement effectiveness may be evaluated using operational metrics.
@@ -1006,8 +798,6 @@ Change Enablement effectiveness may be evaluated using operational metrics.
 Metrics will be introduced when sufficient change data becomes available.
 
 Findings may support improvement initiatives under [Continual Improvement](../Continual-Improvement/).
-
----
 
 ## Continual Improvement
 
@@ -1028,8 +818,6 @@ Potential improvements include:
 
 Improvements should be based on actual change results, observed risks, and documented lessons learned.
 
----
-
 ## Documentation Standards
 
 Change records should:
@@ -1049,35 +837,4 @@ Change records should:
 13. Record post-implementation findings.
 14. Update related infrastructure and knowledge documentation.
 15. Protect sensitive information.
-16. Distinguish simulated authorization from actual lab implementation.
-
----
-
-## Related Documentation
-
-- [Company Overview](../Company-Overview.md)
-- [IT Service Catalog](../Service-Catalog.md)
-- [Operational Scenarios](../Scenarios/)
-- [Service Desk](../Service-Desk/)
-- [Incident Management](../Incident-Management/)
-- [Service Request Management](../Service-Request-Management/)
-- [Knowledge Management](../Knowledge-Management/)
-- [Problem Management](../Problem-Management/)
-- [Monitoring and Event Management](../Monitoring-and-Event-Management/)
-- [Service Configuration Management](../Service-Configuration-Management/)
-- [Information Security Management](../Information-Security-Management/)
-- [Continual Improvement](../Continual-Improvement/)
-- [Infrastructure Documentation](../Infrastructure/)
-- [Change Template](../Templates/Change-Template.md)
-
----
-
-## Portfolio Disclaimer
-
-Technical Techno Tech is a fictional organization developed for hands-on IT training and professional portfolio development.
-
-Business requirements, change authorities, approval decisions, maintenance windows, and operational responsibilities may be simulated.
-
-Technical implementation, infrastructure configuration, troubleshooting, rollback testing, and validation are documented based on hands-on work performed in controlled lab environments where indicated.
-
-This documentation demonstrates practical IT administration, change planning, risk assessment, and IT service management knowledge rather than employment experience within an actual production organization.
+16. Distinguish emulated authorization from actual lab implementation.

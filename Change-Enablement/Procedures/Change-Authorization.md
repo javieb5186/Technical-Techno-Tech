@@ -4,11 +4,9 @@
 **Department:** Internal IT / Change Enablement  
 **Document Type:** Standard Operating Procedure (SOP)  
 **Procedure ID:** SOP-CE-001  
-**Version:** 1.0  
+**Version:** 1.1  
 **Status:** Draft — Lab Procedure  
 **ITIL Practice:** Change Enablement
-
----
 
 ## 1. Purpose
 
@@ -33,8 +31,6 @@ The procedure supports:
 **Key Principle:** A change must receive the authorization appropriate to its type, risk, and organizational policy before implementation.
 
 Authorization does not guarantee that a change will succeed. It confirms that the proposed change has been evaluated and accepted for implementation under defined conditions.
-
----
 
 ## 2. Scope
 
@@ -70,71 +66,17 @@ Changes may involve:
 - OPNsense
 - VyOS
 
-### Examples of Changes
-
-- Modifying Group Policy settings
-- Updating Windows Server configurations
-- Deploying operating system updates
-- Changing firewall rules
-- Modifying DNS or DHCP settings
-- Updating network routing
-- Deploying applications
-- Changing endpoint management policies
-- Modifying authentication configurations
-- Adding or removing infrastructure components
-- Implementing corrective actions identified through Problem Management
-
 Routine service requests do not automatically require separate change authorization. The applicable service request or change procedure determines how they are controlled.
-
----
-
-## 3. ITIL 4 Change Enablement
-
-### Purpose
-
-The purpose of Change Enablement is to maximize the number of successful service and product changes by ensuring that risks have been properly assessed, authorizing changes to proceed, and managing the change schedule.
-
-### Important Definitions
-
-**Change:** The addition, modification, or removal of anything that could have a direct or indirect effect on services.
-
-**Change Authorization:** The decision permitting a proposed change to proceed under defined conditions.
-
-**Change Authority:** A person or group responsible for authorizing a change.
-
-**Change Schedule:** Information used to plan changes and identify potential conflicts.
-
-**Rollback / Backout Plan:** A documented approach for returning to an acceptable previous state if implementation fails.
-
-**Change Advisory Board (CAB):** A group that may advise or support the assessment and authorization of certain changes.
-
-### Change Authorization vs. Change Implementation
-
-| Change Authorization | Change Implementation |
-|---|---|
-| Evaluates whether a change should proceed | Performs the approved technical modification |
-| Reviews risk and impact | Executes the implementation plan |
-| Confirms required preparation | Follows approved implementation steps |
-| Establishes approval conditions | Validates the resulting system state |
-| Records the authorization decision | Records execution results |
 
 A technically feasible change is not necessarily an authorized change.
 
----
-
-## 4. Change Types
+## 3. Change Types
 
 Technical Techno Tech uses three change types.
 
-### 4.1 Standard Change
+### 3.1 Standard Change
 
 A standard change is a low-risk, preauthorized change that is well understood and fully documented.
-
-Examples may include:
-
-- Repeating an approved routine configuration task
-- Deploying an approved application through an established procedure
-- Performing a documented low-risk maintenance activity
 
 ### Standard Change Requirements
 
@@ -147,37 +89,21 @@ Examples may include:
 
 **Important:** A change is not automatically standard simply because it is routine. It must meet the organization's preauthorization criteria.
 
-### 4.2 Normal Change
+### 3.2 Normal Change
 
 A normal change requires assessment and authorization appropriate to its risk and impact.
 
-Examples:
-
-- Modifying a domain-wide Group Policy
-- Changing DNS server configurations
-- Deploying a new server role
-- Updating network routing
-- Modifying firewall access rules
-
 Normal changes may require different authorization levels depending on their risk.
 
-### 4.3 Emergency Change
+### 3.3 Emergency Change
 
 An emergency change must be implemented as soon as possible to address an urgent situation.
-
-Examples:
-
-- Applying an urgent security correction
-- Restoring a critical infrastructure dependency
-- Addressing an imminent severe service failure
 
 Emergency changes follow an expedited assessment and authorization process.
 
 **Important:** Emergency does not mean unauthorized. Emergency changes still require appropriate authorization and documentation, with the process adapted to the urgency.
 
----
-
-## 5. Roles and Responsibilities
+## 4. Roles and Responsibilities
 
 ### Change Requester
 
@@ -262,55 +188,55 @@ A CAB may provide advice on:
 
 **ITIL Note:** ITIL 4 does not require every change to be approved by a CAB. Change authorities should be assigned according to the change's characteristics and organizational policy.
 
-**Lab Note:** These roles represent simulated organizational responsibilities. A single learner may perform multiple roles during a controlled lab exercise. Simulated authorization must not be represented as independent organizational approval.
+**Lab Note:** These roles represent emulated organizational responsibilities. A single learner may perform multiple roles during a controlled lab exercise. Emulated authorization must not be represented as independent organizational approval.
 
 ---
 
-## 6. Change Authorization Principles
+## 5. Change Authorization Principles
 
-### 6.1 Risk-Based Authorization
+### 5.1 Risk-Based Authorization
 
 Authorization requirements should reflect the potential risk and impact of the change.
 
-### 6.2 Appropriate Change Authority
+### 5.2 Appropriate Change Authority
 
 The person or group authorizing a change must have the appropriate responsibility and authority.
 
-### 6.3 Complete Change Documentation
+### 5.3 Complete Change Documentation
 
 The change must contain sufficient information to support an informed decision.
 
-### 6.4 Business Justification
+### 5.4 Business Justification
 
 The expected benefit or necessity of the change should be documented.
 
-### 6.5 Technical Readiness
+### 5.5 Technical Readiness
 
 Implementation, validation, and recovery requirements should be reviewed before approval.
 
-### 6.6 Security Considerations
+### 5.6 Security Considerations
 
 Changes must preserve applicable security controls and access requirements.
 
-### 6.7 Scheduling Awareness
+### 5.7 Scheduling Awareness
 
 Authorization should consider service availability, dependencies, and conflicting changes.
 
-### 6.8 Traceability
+### 5.8 Traceability
 
 All authorization decisions should be documented and linked to the relevant Change record.
 
-### 6.9 Separation of Approval and Execution
+### 5.9 Separation of Approval and Execution
 
 Where practical, higher-risk changes should receive review from someone other than the implementer.
 
-### 6.10 Controlled Reassessment
+### 5.10 Controlled Reassessment
 
 Material changes to the approved scope, risk, or implementation plan should trigger reassessment.
 
 ---
 
-## 7. Change Authorization Requirements
+## 5. Change Authorization Requirements
 
 A normal change should contain sufficient information for assessment.
 
@@ -340,9 +266,9 @@ Additional requirements may apply to significant or security-sensitive changes.
 
 ---
 
-## 8. Change Authorization Decision Matrix
+## 6. Change Authorization Decision Matrix
 
-Technical Techno Tech uses a proposed risk-based authorization model.
+Technical Techno Tech uses a risk-based authorization model.
 
 | Change Type / Risk | Proposed Change Authority | Authorization Approach |
 |---|---|---|
@@ -369,11 +295,7 @@ Technical review and change authorization are separate decisions.
 
 A technical reviewer may recommend approval without being the authorized decision-maker.
 
-This matrix is a proposed internal governance model, not a mandatory ITIL 4 approval structure.
-
----
-
-## 9. Change Risk Assessment
+## 7. Change Risk Assessment
 
 Before authorization, the proposed change should be assessed for potential risk.
 
@@ -390,7 +312,7 @@ Before authorization, the proposed change should be assessed for potential risk.
 9. Testing completeness
 10. Scheduling conflicts
 
-### Proposed Risk Levels
+### Risk Levels
 
 | Risk Level | Description |
 |---|---|
@@ -399,21 +321,7 @@ Before authorization, the proposed change should be assessed for potential risk.
 | High | Significant service impact, complex dependencies, or difficult recovery |
 | Critical | Potential for severe disruption, significant security exposure, or widespread operational impact |
 
-### Risk Assessment Example
-
-**Proposed Change:** Modify DNS settings on one lab workstation.
-
-**Potential Risk:** Low, assuming the configuration is isolated and easily reversible.
-
-**Alternative Change:** Modify DHCP DNS options used by multiple departments.
-
-**Potential Risk:** Medium or High, depending on affected services, scope, and recovery capability.
-
-Risk should be determined by the actual circumstances, not only the technology involved.
-
----
-
-## 10. Change Authorization Workflow
+## 8. Change Authorization Workflow
 
 ```text
 Change Request Submitted
@@ -469,9 +377,7 @@ Implementation    |
 
 An approved change proceeds to implementation only when its authorization conditions have been satisfied.
 
----
-
-## 11. Change Authorization Procedure
+## 9. Change Authorization Procedure
 
 ### Step 1 — Receive the Change Request
 
@@ -488,26 +394,6 @@ Review:
 - Business justification
 - Affected services
 - Proposed implementation date
-
-#### Example
-
-```text
-Change ID: CHG-001
-
-Title:
-Update DNS Configuration for Domain-Joined Workstations
-
-Change Type:
-Normal
-
-Affected Service:
-IT-SVC-004 — Network Connectivity
-
-Related Problem:
-PRB-001
-```
-
-**Expected Result:** The proposed change is available for authorization review.
 
 ### Step 2 — Verify Documentation Completeness
 
@@ -577,28 +463,6 @@ Possible justifications include:
 
 Review the services and infrastructure potentially affected.
 
-#### Example
-
-**Proposed Change:** Modify DHCP DNS server options.
-
-**Potentially Affected Components:**
-
-- DHCP server
-- Domain controllers
-- DNS servers
-- Domain-joined workstations
-- Network segments receiving the DHCP configuration
-
-**Potentially Affected Services:**
-
-- IT-SVC-001 — Identity & Access Management
-- IT-SVC-004 — Network Connectivity
-- IT-SVC-005 — Server & Infrastructure Services
-
-Review available Configuration Item records and dependency maps.
-
-**Expected Result:** Relevant dependencies and affected services are identified.
-
 ### Step 6 — Evaluate Technical Risk
 
 Assess the potential consequences of implementation failure.
@@ -613,14 +477,6 @@ Consider:
 - Security exposure
 - Service dependency failures
 - Recovery difficulties
-
-#### Example
-
-Changing DNS configuration may affect domain controller discovery.
-
-An incorrect configuration could prevent workstations from locating required directory services.
-
-**Expected Result:** Technical risks are documented.
 
 ### Step 7 — Evaluate Business Impact
 
@@ -662,24 +518,6 @@ The plan should include:
 8. Validation checkpoints
 9. Communication requirements
 
-### Example
-
-**Proposed Change:** Update DHCP DNS server options.
-
-**Implementation Plan:**
-
-1. Review the existing DHCP configuration.
-2. Record current DNS options.
-3. Verify approved replacement values.
-4. Confirm affected scopes.
-5. Schedule the change.
-6. Apply the authorized configuration.
-7. Test client DHCP renewal.
-8. Verify DNS resolution.
-9. Confirm domain controller discovery.
-
-**Expected Result:** The proposed implementation is sufficiently defined.
-
 ### Step 9 — Review the Validation Plan
 
 Determine how successful implementation will be verified.
@@ -692,32 +530,6 @@ Validation should address:
 - Security requirements
 - Configuration accuracy
 - Unexpected side effects
-
-#### Example Validation Commands
-
-**DNS Configuration**
-
-```powershell
-Get-DnsClientServerAddress -AddressFamily IPv4
-```
-
-**DNS Resolution**
-
-```powershell
-nslookup dc01.homelab.local
-```
-
-**Domain Controller Discovery**
-
-```powershell
-nltest /dsgetdc:homelab.local
-```
-
-These commands are examples of possible validation activities.
-
-They do not indicate that the change has been executed.
-
-**Expected Result:** Success criteria are defined before authorization.
 
 ### Step 10 — Review the Rollback Plan
 
@@ -732,23 +544,6 @@ The plan should identify:
 - Responsible personnel
 - Expected recovery time
 - Post-rollback validation
-
-### Example
-
-**Change:** Modify DHCP DNS server options.
-
-**Rollback Plan:**
-
-1. Stop further implementation if validation fails.
-2. Restore the previously documented DHCP options.
-3. Apply the appropriate client renewal procedure.
-4. Verify DNS resolution.
-5. Confirm domain controller discovery.
-6. Record rollback results.
-
-Rollback feasibility should be assessed before authorization.
-
-**Expected Result:** A recovery approach is documented.
 
 ### Step 11 — Review Security Requirements
 
@@ -766,21 +561,6 @@ Determine whether the change affects:
 
 Security-sensitive changes may require additional review.
 
-#### Example
-
-**Proposed Change:** Modify a firewall rule permitting administrative access.
-
-The change should be evaluated for:
-
-- Source restrictions
-- Destination restrictions
-- Required ports
-- Administrative authorization
-- Security monitoring
-- Potential unauthorized access
-
-**Expected Result:** Relevant security risks are assessed.
-
 ### Step 12 — Review Change Dependencies
 
 Determine whether the change depends on other activities.
@@ -794,17 +574,6 @@ Examples:
 - Administrative credentials
 - Completion of another change
 - Maintenance window availability
-
-#### Example
-
-A domain controller configuration change may depend on:
-
-- Healthy Active Directory replication
-- Available domain controller backups
-- Functional DNS services
-- Administrative access
-
-**Expected Result:** Required dependencies are identified.
 
 ### Step 13 — Review the Change Schedule
 
@@ -824,14 +593,6 @@ Consider:
 
 Avoid scheduling changes that could interfere with each other without appropriate coordination.
 
-#### Example
-
-A DNS infrastructure change and an Active Directory maintenance activity may affect overlapping services.
-
-The Change Coordinator should review the combined risk.
-
-**Expected Result:** Scheduling conflicts are evaluated.
-
 ### Step 14 — Identify the Change Authority
 
 Determine who is authorized to approve the proposed change.
@@ -844,23 +605,6 @@ The decision should reflect:
 - Security requirements
 - Technical complexity
 - Organizational responsibility
-
-#### Example
-
-```text
-Change Type: Normal
-Risk Level: Medium
-
-Proposed Authority:
-Designated IT Change Authority
-
-Additional Review:
-Systems Administration
-```
-
-The named authority must reflect the organization's adopted governance model.
-
-**Expected Result:** The appropriate authorization responsibility is identified.
 
 ### Step 15 — Submit for Authorization
 
@@ -894,19 +638,6 @@ The Change Authority reviews the proposal and records a decision.
 | Changes Required | Proposal must be revised and reassessed |
 | Rejected | Change is not authorized |
 | Deferred | Decision is postponed pending additional information or a suitable schedule |
-
-### Example
-
-**Decision:** Approved With Conditions
-
-**Conditions:**
-
-- Complete a current configuration backup.
-- Confirm domain controller health.
-- Perform the change during the approved maintenance window.
-- Validate DNS and authentication after implementation.
-
-**Expected Result:** A documented authorization decision is available.
 
 ### Step 17 — Record the Authorization
 
@@ -1005,9 +736,7 @@ If material changes occur before implementation, reassessment may be required.
 
 **Expected Result:** The change is formally authorized for implementation.
 
----
-
-## 12. Standard Change Authorization
+## 10. Standard Change Authorization
 
 Standard changes use preauthorization rather than requiring a new individual approval each time.
 
@@ -1032,15 +761,7 @@ A standard change should have:
 5. Document implementation and validation.
 6. Escalate exceptions for reassessment.
 
-### Example
-
-A routine software deployment may qualify as a standard change when it follows an approved, low-risk, repeatable deployment procedure.
-
-A new application deployment with unknown compatibility risks should not automatically be treated as standard.
-
----
-
-## 13. Normal Change Authorization
+## 11. Normal Change Authorization
 
 Normal changes require risk-based assessment.
 
@@ -1063,24 +784,7 @@ May require:
 - Detailed rollback planning
 - Maintenance window coordination
 
-### Example
-
-**Change:** Modify domain-wide password policy.
-
-Potential considerations:
-
-- Organization-wide authentication impact
-- Security requirements
-- User communication
-- Application compatibility
-- Policy inheritance
-- Recovery requirements
-
-The change should receive authorization appropriate to its actual risk.
-
----
-
-## 14. Emergency Change Authorization
+## 12. Emergency Change Authorization
 
 Emergency changes use an expedited process when delay could create unacceptable business or security consequences.
 
@@ -1117,17 +821,11 @@ Urgency does not eliminate the need for:
 - Technical validation
 - Documentation
 
-### Example
-
-A critical security vulnerability requires an urgent configuration change to reduce immediate exposure.
-
 The Emergency Change Authority evaluates the proposed action and authorizes an appropriately scoped response.
 
-**Lab Note:** Emergency approval scenarios may be simulated. A fictional approval does not authorize changes to systems outside the learner's control.
+**Lab Note:** Emergency approval scenarios may be emulated. A fictional approval does not authorize changes to systems outside the learner's control.
 
----
-
-## 15. Change Advisory Board
+## 13. Change Advisory Board
 
 A Change Advisory Board may support the evaluation of changes that require multiple perspectives.
 
@@ -1160,53 +858,19 @@ The organization must define whether the CAB advises, authorizes, or performs bo
 
 ### Portfolio Consideration
 
-A simulated CAB meeting may be documented as an exercise.
+A emulated CAB meeting may be documented as an exercise.
 
 It must not be represented as a real meeting involving independent participants unless that actually occurred.
 
----
-
-## 16. Conditional Authorization
+## 14. Conditional Authorization
 
 A change may be approved subject to specific conditions.
-
-### Examples
-
-- Complete a verified backup.
-- Obtain security review.
-- Confirm affected services.
-- Update the implementation plan.
-- Perform testing in a lab.
-- Schedule a maintenance window.
-- Prepare a rollback procedure.
-- Notify affected stakeholders.
 
 ### Conditional Approval Rule
 
 A change must not proceed until all required conditions have been satisfied.
 
-### Example
-
-```text
-Change ID: CHG-001
-
-Decision:
-Approved With Conditions
-
-Conditions:
-1. Complete DHCP configuration backup.
-2. Verify DNS server availability.
-3. Confirm affected DHCP scopes.
-4. Schedule implementation.
-5. Prepare rollback procedure.
-
-Implementation Authorized:
-Only After Conditions Are Satisfied
-```
-
----
-
-## 17. Rejected or Deferred Changes
+## 15. Rejected or Deferred Changes
 
 Not every proposed change should be approved.
 
@@ -1240,9 +904,7 @@ Not every proposed change should be approved.
 
 A rejected change must not be implemented under the rejected authorization.
 
----
-
-## 18. Change Reauthorization
+## 16. Change Reauthorization
 
 Previously authorized changes may require reassessment.
 
@@ -1257,16 +919,6 @@ Previously authorized changes may require reassessment.
 - Material scheduling changes
 - New infrastructure dependencies
 
-### Example
-
-**Originally Approved:** Modify DNS settings on one workstation.
-
-**Revised Scope:** Modify DNS settings across multiple DHCP scopes.
-
-The revised change may affect substantially more systems.
-
-The original authorization should not automatically cover the expanded scope.
-
 ### Reauthorization Procedure
 
 1. Document the proposed revision.
@@ -1276,9 +928,7 @@ The original authorization should not automatically cover the expanded scope.
 5. Obtain appropriate authorization.
 6. Record the new decision.
 
----
-
-## 19. Authorization Documentation Standards
+## 17. Authorization Documentation Standards
 
 Authorization records should be:
 
@@ -1315,11 +965,9 @@ Do not fabricate:
 - Authorization timestamps
 - Independent review outcomes
 
-Simulated approvals should be explicitly identified as simulated.
+Emulated approvals should be explicitly identified as emulated.
 
----
-
-## 20. Change Record Storage
+## 18. Change Record Storage
 
 Change records are maintained under:
 
@@ -1354,123 +1002,7 @@ Use the standardized:
 
 [Change Template](../../Templates/Change-Template.md)
 
----
-
-## 21. Example Change Authorization Scenario
-
-### Scenario — Correcting DHCP DNS Configuration
-
-**Change ID:** CHG-001  
-**Change Type:** Normal  
-**Affected Service:** IT-SVC-004 — Network Connectivity  
-**Related Problem:** PRB-001  
-**Environment:** homelab.local
-
-### Business Context
-
-Employees use domain-joined Windows workstations that depend on internal DNS services for domain controller discovery.
-
-A simulated Problem Management investigation identifies incorrect DNS settings distributed through DHCP.
-
-### Proposed Change
-
-Update the DHCP DNS server options to distribute the approved internal DNS server addresses.
-
-### Proposed DNS Servers
-
-| Server | IP Address |
-|---|---|
-| DC01 | 10.20.10.10 |
-| DC02 | 10.20.10.11 |
-
-These addresses reflect the documented lab design. Their current availability and configuration must be verified before implementation.
-
-### Business Justification
-
-Correcting the DHCP configuration is intended to improve domain controller discovery and reduce recurring authentication failures.
-
-### Preliminary Risk Assessment
-
-**Risk Level:** Medium — Illustrative
-
-Potential risks:
-
-- Incorrect DNS server values
-- Client connectivity disruption
-- Authentication failures
-- DHCP scope misconfiguration
-- Incomplete rollback
-
-### Proposed Implementation Plan
-
-1. Review the current DHCP configuration.
-2. Export or document existing settings.
-3. Verify the approved DNS server addresses.
-4. Identify affected DHCP scopes.
-5. Apply the authorized configuration.
-6. Renew DHCP configuration on an appropriate test workstation.
-7. Verify DNS settings.
-8. Test domain controller discovery.
-9. Confirm domain authentication.
-
-### Proposed Validation
-
-```powershell
-Get-DnsClientServerAddress -AddressFamily IPv4
-```
-
-```powershell
-nslookup dc01.homelab.local
-```
-
-```powershell
-nltest /dsgetdc:homelab.local
-```
-
-### Proposed Rollback
-
-1. Restore the previously documented DHCP DNS options.
-2. Verify the restored configuration.
-3. Renew client DHCP settings when appropriate.
-4. Confirm DNS resolution.
-5. Validate domain controller discovery.
-6. Document rollback results.
-
-### Simulated Authorization Assessment
-
-| Requirement | Assessment |
-|---|---|
-| Business Justification | Documented |
-| Affected Services | Identified |
-| Risk Assessment | Proposed |
-| Implementation Plan | Drafted |
-| Validation Plan | Drafted |
-| Rollback Plan | Drafted |
-| Technical Review | Pending |
-| Authorization | Pending |
-
-### Proposed Authorization Conditions
-
-- Verify both DNS servers are available.
-- Confirm the correct DHCP scopes.
-- Complete configuration backup.
-- Review the implementation plan.
-- Confirm rollback readiness.
-- Obtain the required simulated or actual authorization appropriate to the exercise.
-
-### Authorization Status
-
-**Pending — Not Authorized**
-
-### Expected Outcome
-
-The change may proceed after the applicable authorization requirements have been satisfied.
-
-**Scenario Status:** Illustrative authorization exercise. No approval, implementation, or validation is claimed as completed.
-
----
-
-## 22. Common Change Authorization Errors
+## 19. Common Change Authorization Errors
 
 ### Error 1 — Implementing Before Authorization
 
@@ -1530,11 +1062,9 @@ The change may proceed after the applicable authorization requirements have been
 
 **Incorrect:** Recording fictional manager approval as an actual authorization.
 
-**Correct:** Clearly label simulated decisions and self-review activities.
+**Correct:** Clearly label emulated decisions and self-review activities.
 
----
-
-## 23. Change Authorization Quality Checklist
+## 20. Change Authorization Quality Checklist
 
 Before authorizing a change, verify:
 
@@ -1566,9 +1096,7 @@ Before authorizing a change, verify:
 - [ ] Implementation readiness confirmed
 - [ ] Approval status accurately represented
 
----
-
-## 24. Change Authorization Performance Metrics
+## 21. Change Authorization Performance Metrics
 
 Change authorization effectiveness may be evaluated using:
 
@@ -1586,74 +1114,9 @@ Change authorization effectiveness may be evaluated using:
 | Change Success Rate | Evaluates successful implementation outcomes |
 | Change-Related Incident Rate | Tracks incidents associated with implemented changes |
 
-Metrics should be calculated using actual records or clearly labeled simulated datasets.
+Metrics should be calculated using actual records or clearly labeled emulated datasets.
 
----
-
-## 25. Integration With ITIL Practices
-
-| ITIL Practice | Relationship |
-|---|---|
-| Service Desk | Communicates relevant changes and identifies employee impact |
-| Incident Management | May require authorized changes to restore services |
-| Service Request Management | May initiate changes through predefined fulfillment workflows |
-| Knowledge Management | Maintains approved implementation and recovery instructions |
-| Problem Management | Recommends corrective changes based on investigation findings |
-| Change Enablement | Evaluates risk and authorizes appropriate modifications |
-| Monitoring and Event Management | Provides service health information and post-change validation |
-| Service Configuration Management | Identifies affected Configuration Items and dependencies |
-| Information Security Management | Reviews security-sensitive changes |
-| Continual Improvement | Evaluates authorization effectiveness and change outcomes |
-
----
-
-## 26. Related Procedures and Documentation
-
-### Change Enablement
-
-- [Change Enablement Overview](../README.md)
-- [Change Template](../../Templates/Change-Template.md)
-
-### Problem Management
-
-- [Problem Management Overview](../../Problem-Management/)
-- [Problem Identification](../../Problem-Management/Procedures/Problem-Identification.md)
-- [Root Cause Analysis](../../Problem-Management/Procedures/Root-Cause-Analysis.md)
-- [Known Error Management](../../Problem-Management/Procedures/Known-Error-Management.md)
-
-### Incident Management
-
-- [Incident Management Overview](../../Incident-Management/)
-- [Incident Resolution](../../Incident-Management/Procedures/Incident-Resolution.md)
-
-### ITIL Practices
-
-- [Service Desk](../../Service-Desk/)
-- [Service Request Management](../../Service-Request-Management/)
-- [Knowledge Management](../../Knowledge-Management/)
-- [Monitoring and Event Management](../../Monitoring-and-Event-Management/)
-- [Service Configuration Management](../../Service-Configuration-Management/)
-- [Information Security Management](../../Information-Security-Management/)
-- [Continual Improvement](../../Continual-Improvement/)
-
-### Infrastructure Documentation
-
-- [Infrastructure Overview](../../Infrastructure/)
-- [Active Directory](../../Infrastructure/Active-Directory/)
-- [Windows Server](../../Infrastructure/Windows-Server/)
-- [Microsoft 365](../../Infrastructure/Microsoft-365/)
-- [Networking](../../Infrastructure/Networking/)
-- [Virtualization](../../Infrastructure/Virtualization/)
-
-### Organization Documentation
-
-- [Company Overview](../../Company-Overview.md)
-- [IT Service Catalog](../../Service-Catalog.md)
-- [Operational Scenarios](../../Scenarios/)
-
----
-
-## 27. Procedure Review
+## 22. Procedure Review
 
 This procedure should be reviewed when:
 
@@ -1672,19 +1135,4 @@ This procedure should be reviewed when:
 | Version | Description |
 |---|---|
 | 1.0 | Initial Change Authorization procedure |
-
----
-
-## Portfolio Disclaimer
-
-Technical Techno Tech is a fictional organization developed for hands-on IT training and professional portfolio development.
-
-Employee requests, organizational roles, business impact assessments, Change Advisory Board activities, authorization decisions, and approval workflows may be simulated.
-
-Technical implementations, infrastructure modifications, diagnostic commands, validation results, and rollback activities are documented based on hands-on lab work where indicated.
-
-Simulated approvals do not constitute actual authorization to modify systems outside the learner's controlled environment.
-
-GitHub publication does not imply independent technical approval, production deployment, or organizational authorization.
-
-This procedure demonstrates ITIL-aligned Change Enablement, risk-based authorization, technical assessment, change governance, implementation readiness, and operational documentation rather than employment experience within an actual production organization.
+| 1.1 | Remove unneccesary information |

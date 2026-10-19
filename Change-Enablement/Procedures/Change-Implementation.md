@@ -4,11 +4,9 @@
 **Department:** Internal IT / Change Enablement  
 **Document Type:** Standard Operating Procedure (SOP)  
 **Procedure ID:** SOP-CE-002  
-**Version:** 1.0  
+**Version:** 1.1 
 **Status:** Draft — Lab Procedure  
 **ITIL Practice:** Change Enablement
-
----
 
 ## 1. Purpose
 
@@ -31,8 +29,6 @@ The procedure supports:
 - Continual improvement
 
 **Key Principle:** Implement only what has been authorized, validate the resulting system state, and maintain a recovery strategy if the change does not produce the expected outcome.
-
----
 
 ## 2. Scope
 
@@ -68,104 +64,57 @@ Change implementation may involve:
 - OPNsense
 - VyOS
 
-### Example Changes
-
-- Updating Group Policy settings
-- Modifying DNS or DHCP configurations
-- Deploying software
-- Installing operating system updates
-- Updating firewall rules
-- Changing network routing
-- Modifying server roles
-- Configuring endpoint management policies
-- Updating authentication settings
-- Deploying additional infrastructure components
-
 Technologies should only be described as operational when supported by actual lab evidence.
-
----
-
-## 3. ITIL 4 Change Enablement
-
-### Purpose
-
-The purpose of Change Enablement is to maximize the number of successful service and product changes by ensuring that risks have been properly assessed, authorizing changes to proceed, and managing the change schedule.
-
-### Important Definitions
-
-**Change:** The addition, modification, or removal of anything that could have a direct or indirect effect on services.
-
-**Change Authorization:** The decision permitting a proposed change to proceed under defined conditions.
-
-**Change Implementation:** The controlled execution of an authorized modification.
-
-**Change Schedule:** Information used to plan changes and identify potential conflicts.
-
-**Rollback / Backout:** Actions taken to return to an acceptable previous state when implementation fails.
-
-**Post-Implementation Review (PIR):** An evaluation of the change's outcome, including its effectiveness, impact, and lessons learned.
-
-### Authorization vs. Implementation
-
-| Change Authorization | Change Implementation |
-|---|---|
-| Determines whether a change may proceed | Executes the authorized modification |
-| Reviews business and technical risk | Follows the approved technical plan |
-| Establishes implementation conditions | Verifies that conditions are satisfied |
-| Evaluates recovery readiness | Performs recovery when required |
-| Records approval decisions | Records execution and validation results |
 
 Authorization must precede implementation unless the activity is already covered by an applicable preauthorized standard change model.
 
----
-
-## 4. Change Implementation Principles
+## 3. Change Implementation Principles
 
 Technical Techno Tech follows these principles during change implementation.
 
-### 4.1 Authorization First
+### 3.1 Authorization First
 
 Do not implement changes without the required authorization.
 
-### 4.2 Follow the Approved Scope
+### 3.2 Follow the Approved Scope
 
 Implement only the modifications covered by the authorization.
 
-### 4.3 Verify Readiness
+### 3.3 Verify Readiness
 
 Confirm prerequisites, access, backups, dependencies, and implementation conditions before beginning.
 
-### 4.4 Establish a Baseline
+### 3.4 Establish a Baseline
 
 Record the relevant system configuration before making modifications.
 
-### 4.5 Use Controlled Execution
+### 3.5 Use Controlled Execution
 
 Follow the approved implementation sequence and avoid unnecessary simultaneous changes.
 
-### 4.6 Validate Results
+### 3.6 Validate Results
 
 Confirm that the change achieved its intended outcome.
 
-### 4.7 Monitor for Unexpected Impact
+### 3.7 Monitor for Unexpected Impact
 
 Review affected services and systems for unintended consequences.
 
-### 4.8 Maintain Recovery Capability
+### 3.8 Maintain Recovery Capability
 
 Use the approved rollback or recovery plan when necessary.
 
-### 4.9 Document Actual Results
+### 3.9 Document Actual Results
 
 Record what was performed, what succeeded, what failed, and what remains unresolved.
 
-### 4.10 Support Continual Improvement
+### 3.10 Support Continual Improvement
 
 Use implementation findings to improve future changes.
 
 ---
 
-## 5. Roles and Responsibilities
+## 4. Roles and Responsibilities
 
 ### Change Owner
 
@@ -242,7 +191,7 @@ Responsible for:
 
 ---
 
-## 6. Change Implementation Prerequisites
+## 5. Change Implementation Prerequisites
 
 Before implementation, verify the following requirements.
 
@@ -284,9 +233,7 @@ Before implementation, verify the following requirements.
 
 **Important:** If a required prerequisite is not satisfied, implementation should not begin until the issue is resolved or the change is appropriately reassessed.
 
----
-
-## 7. Change Implementation Lifecycle
+## 6. Change Implementation Lifecycle
 
 ```text
 Authorized Change
@@ -353,9 +300,7 @@ Validation      |
 
 Implementation, review, and closure are related activities but should remain distinguishable in the Change record.
 
----
-
-## 8. Change Implementation Procedure
+## 7. Change Implementation Procedure
 
 ### Step 1 — Review the Authorized Change Record
 
@@ -377,29 +322,6 @@ Review:
 - Authorization decision
 - Authorization conditions
 - Approved implementation window
-
-#### Example
-
-```text
-Change ID: CHG-001
-
-Title:
-Correct DHCP DNS Server Configuration
-
-Change Type:
-Normal
-
-Affected Service:
-IT-SVC-004 — Network Connectivity
-
-Related Problem:
-PRB-001
-
-Authorization Status:
-Pending Verification
-```
-
-**Expected Result:** The implementation technician understands the approved change and its requirements.
 
 ### Step 2 — Confirm Authorization
 
@@ -430,17 +352,6 @@ Stop and refer the change for authorization or reassessment.
 
 Review exactly what systems and configurations may be modified.
 
-#### Example
-
-**Approved Scope:** Update DNS server options on a specific DHCP scope.
-
-**Not Automatically Authorized:**
-
-- Modifying unrelated DHCP scopes
-- Changing domain controller IP addresses
-- Updating firewall policies
-- Reconfiguring unrelated DNS zones
-
 If additional modifications are required, evaluate whether reauthorization is necessary.
 
 **Expected Result:** Implementation boundaries are established.
@@ -460,22 +371,6 @@ Potential prerequisites include:
 - Appropriate backups
 - Access to recovery systems
 
-#### Example — Active Directory
-
-Before modifying a domain-related configuration, relevant health checks may include:
-
-```powershell
-dcdiag /q
-```
-
-```powershell
-repadmin /replsummary
-```
-
-Results should be interpreted before proceeding.
-
-**Expected Result:** Technical readiness is verified.
-
 ### Step 5 — Confirm the Implementation Window
 
 Review the approved schedule.
@@ -488,14 +383,6 @@ Consider:
 - Personnel availability
 - Related infrastructure activities
 - Recovery time
-
-#### Example
-
-A DNS infrastructure modification may be scheduled during a period of reduced service demand.
-
-A lab exercise may use a simulated maintenance window.
-
-**Expected Result:** The implementation schedule is confirmed.
 
 ### Step 6 — Notify Relevant Stakeholders
 
@@ -539,31 +426,7 @@ Baseline information may include:
 - Resource usage
 - Relevant event logs
 
-#### Example — Network Configuration
-
-```powershell
-ipconfig /all
-```
-
-#### Example — Windows Services
-
-```powershell
-Get-Service
-```
-
-#### Example — DNS Client Configuration
-
-```powershell
-Get-DnsClientServerAddress -AddressFamily IPv4
-```
-
-#### Example — Group Policy
-
-```powershell
-gpresult /r
-```
-
-**Expected Result:** Relevant pre-change conditions are documented for comparison.
+Relevant pre-change conditions are documented for comparison.
 
 ### Step 8 — Verify Backup and Recovery Readiness
 
@@ -622,24 +485,6 @@ Perform the implementation according to the approved plan.
 - Stop when unexpected risks emerge.
 - Preserve relevant technical evidence.
 
-#### Example
-
-**Change:** Modify an approved DNS client configuration.
-
-An authorized technician may use:
-
-```powershell
-Set-DnsClientServerAddress -InterfaceAlias "Ethernet0" -ServerAddresses 10.20.10.10,10.20.10.11
-```
-
-This command changes DNS settings on the specified network interface.
-
-It is not a command for changing DHCP scope options.
-
-The interface alias, addresses, and authorization must be verified before execution.
-
-**Expected Result:** The approved technical modification is performed.
-
 ### Step 11 — Record Implementation Activities
 
 Document each significant action.
@@ -678,32 +523,6 @@ Notes:
 ### Step 12 — Perform Immediate Technical Validation
 
 Verify that the intended configuration or functionality is present.
-
-### Validation Examples
-
-**DNS Configuration**
-
-```powershell
-Get-DnsClientServerAddress -AddressFamily IPv4
-```
-
-**DNS Resolution**
-
-```powershell
-nslookup dc01.homelab.local
-```
-
-**Domain Controller Discovery**
-
-```powershell
-nltest /dsgetdc:homelab.local
-```
-
-**Windows Service Status**
-
-```powershell
-Get-Service -Name DNS
-```
 
 ### Validation Requirements
 
@@ -751,17 +570,6 @@ Review:
 - Network segmentation
 - Data access permissions
 
-#### Example
-
-After modifying a firewall rule:
-
-1. Confirm authorized traffic is permitted.
-2. Verify that unrelated traffic remains restricted.
-3. Review relevant logging.
-4. Confirm the rule matches the approved scope.
-
-**Expected Result:** Required security controls remain effective.
-
 ### Step 15 — Monitor for Unexpected Impact
 
 Observe affected services after implementation.
@@ -802,20 +610,6 @@ Compare actual results against the approved success criteria.
 | Failed | Required objectives were not achieved |
 | Rolled Back | Recovery actions returned the environment to an acceptable state |
 | Inconclusive | Available evidence is insufficient to determine success |
-
-### Example
-
-**Change:** Correct DNS configuration.
-
-**Success Criteria:**
-
-- Approved DNS settings are present.
-- Required internal names resolve.
-- Domain controller discovery succeeds.
-- Authorized authentication works.
-- No unacceptable service impact is observed.
-
-**Expected Result:** Implementation outcome is accurately classified.
 
 ### Step 17 — Determine Whether Rollback Is Required
 
@@ -860,24 +654,6 @@ Follow the approved rollback plan.
 8. Document the outcome.
 9. Escalate unresolved failures.
 
-### Example
-
-**Change:** Modify DNS client configuration.
-
-**Rollback:** Restore the previously recorded DNS server addresses or approved automatic configuration, as applicable.
-
-#### Illustrative Command
-
-```powershell
-Set-DnsClientServerAddress -InterfaceAlias "Ethernet0" -ResetServerAddresses
-```
-
-This command resets the interface to its default DNS configuration behavior. It does not necessarily restore previously configured static DNS addresses.
-
-If the original configuration used static DNS servers, restore the documented original values instead.
-
-**Expected Result:** The environment is returned to an acceptable state when recovery is possible.
-
 ### Step 19 — Handle Unexpected Implementation Issues
 
 If an unexpected condition occurs:
@@ -890,14 +666,6 @@ If an unexpected condition occurs:
 6. Follow applicable Incident Management procedures.
 7. Evaluate whether a new change authorization is required.
 8. Preserve diagnostic evidence.
-
-### Example
-
-A firewall change unexpectedly blocks authentication traffic.
-
-The implementation technician should not introduce unrelated firewall modifications without appropriate assessment and authorization.
-
-**Expected Result:** Unexpected issues are managed through controlled procedures.
 
 ### Step 20 — Update Configuration Documentation
 
@@ -914,17 +682,6 @@ Potential updates include:
 - Cloud service configurations
 - Configuration Item relationships
 
-### Example
-
-A DHCP configuration change may require updates to:
-
-- DHCP server documentation
-- Relevant network configuration records
-- Affected Configuration Items
-- Technical Knowledge Base articles
-
-**Expected Result:** Documentation reflects the implemented configuration.
-
 ### Step 21 — Update Related Knowledge Articles
 
 Determine whether technical procedures require revision.
@@ -936,14 +693,6 @@ Examples:
 - Known error workarounds
 - Configuration procedures
 - Recovery documentation
-
-### Example
-
-A permanent correction eliminates a known error workaround.
-
-The associated Knowledge Base article should be reviewed to prevent technicians from applying obsolete instructions.
-
-**Expected Result:** Operational knowledge remains accurate.
 
 ### Step 22 — Communicate Implementation Results
 
@@ -992,14 +741,6 @@ Document:
 - Documentation updates
 - Follow-up requirements
 
-### Proposed Status
-
-**Implemented — Pending Review**
-
-If the implementation failed, use an appropriate status reflecting the actual outcome.
-
-**Expected Result:** The Change record accurately reflects implementation activities.
-
 ### Step 24 — Prepare for Post-Implementation Review
 
 Provide the information required to evaluate the change.
@@ -1018,9 +759,7 @@ Provide the information required to evaluate the change.
 
 **Expected Result:** The change is ready for post-implementation evaluation.
 
----
-
-## 9. Standard Change Implementation
+## 8. Standard Change Implementation
 
 Standard changes follow approved, repeatable procedures.
 
@@ -1050,9 +789,7 @@ If the activity falls outside the approved standard change model, reassessment m
 
 A routine activity is not automatically a standard change.
 
----
-
-## 10. Normal Change Implementation
+## 9. Normal Change Implementation
 
 Normal changes follow the risk-based authorization and implementation process.
 
@@ -1077,17 +814,9 @@ Normal changes follow the risk-based authorization and implementation process.
 
 Higher-risk normal changes may require additional coordination, testing, and monitoring.
 
----
-
-## 11. Emergency Change Implementation
+## 10. Emergency Change Implementation
 
 Emergency changes use expedited procedures when urgent action is necessary.
-
-### Examples
-
-- Critical service restoration
-- Urgent security remediation
-- Prevention of imminent infrastructure failure
 
 ### Emergency Implementation Procedure
 
@@ -1115,9 +844,7 @@ Emergency implementation must still consider:
 
 Emergency classification should not be used to bypass normal planning when no genuine urgency exists.
 
----
-
-## 12. Implementation Validation Standards
+## 11. Implementation Validation Standards
 
 Validation should confirm that the change meets its intended objectives.
 
@@ -1137,22 +864,7 @@ Confirms that applicable security controls remain effective.
 
 Confirms that the environment does not exhibit unacceptable errors or degradation after implementation.
 
-### Example
-
-**Change:** Update domain-related DNS configuration.
-
-| Validation Type | Example |
-|---|---|
-| Technical | Correct DNS addresses are configured |
-| Functional | Domain controller discovery succeeds |
-| Security | Authentication requirements remain enforced |
-| Stability | No unacceptable recurring connectivity errors appear |
-
-The required observation period depends on the nature and risk of the change.
-
----
-
-## 13. Change Implementation Evidence
+## 12. Change Implementation Evidence
 
 Implementation evidence should demonstrate what was actually performed.
 
@@ -1200,9 +912,7 @@ Each evidence item should identify:
 
 Do not fabricate command output, screenshots, or validation results.
 
----
-
-## 14. Implementation Log Template
+## 13. Implementation Log Template
 
 Use the following structure within the Change record.
 
@@ -1285,149 +995,7 @@ Documentation Updates:
 Review Status:
 ```
 
----
-
-## 15. Example Change Implementation Scenario
-
-### Scenario — Correcting DHCP DNS Server Configuration
-
-**Change ID:** CHG-001  
-**Change Type:** Normal  
-**Affected Service:** IT-SVC-004 — Network Connectivity  
-**Related Problem:** PRB-001  
-**Environment:** homelab.local
-
-### Business Context
-
-Domain-joined workstations depend on internal DNS services to locate domain controllers.
-
-A simulated Problem Management investigation identifies incorrect DNS server options distributed through DHCP.
-
-### Proposed Change
-
-Update the affected DHCP scope options to distribute the approved internal DNS servers.
-
-### Proposed DNS Servers
-
-| Server | IP Address |
-|---|---|
-| DC01 | 10.20.10.10 |
-| DC02 | 10.20.10.11 |
-
-The current availability and DNS configuration of both servers must be verified before implementation.
-
-### Implementation Prerequisites
-
-- Appropriate change authorization
-- Administrative access to the DHCP server
-- Identification of the correct DHCP scope
-- Verification of approved DNS addresses
-- Configuration backup or export
-- Documented rollback plan
-- Available test workstation
-
-### Proposed Pre-Change Validation
-
-On the DHCP server, if the Windows DHCP Server PowerShell module is available:
-
-```powershell
-Get-DhcpServerv4Scope
-```
-
-Review the DNS options for the applicable scope:
-
-```powershell
-Get-DhcpServerv4OptionValue -ScopeId <ScopeNetworkAddress>
-```
-
-Replace `<ScopeNetworkAddress>` with the actual DHCP scope network address.
-
-### Proposed Implementation
-
-After confirming the correct scope, approved values, and authorization:
-
-```powershell
-Set-DhcpServerv4OptionValue -ScopeId <ScopeNetworkAddress> -DnsServer 10.20.10.10,10.20.10.11
-```
-
-This command updates the DNS server option for the specified DHCP scope.
-
-It must not be executed until the DHCP server, scope, and intended configuration have been verified.
-
-### Proposed Client Validation
-
-On an appropriate DHCP-configured test workstation:
-
-```powershell
-ipconfig /renew
-```
-
-Review the resulting configuration:
-
-```powershell
-ipconfig /all
-```
-
-Verify DNS resolution:
-
-```powershell
-nslookup dc01.homelab.local
-```
-
-Verify domain controller discovery:
-
-```powershell
-nltest /dsgetdc:homelab.local
-```
-
-Confirm successful authorized domain authentication.
-
-### Proposed Rollback
-
-If validation fails:
-
-1. Stop further implementation.
-2. Review the observed failure.
-3. Confirm the rollback decision.
-4. Restore the previously documented DHCP DNS options.
-5. Renew the test workstation's DHCP configuration.
-6. Verify DNS resolution.
-7. Confirm domain controller discovery.
-8. Document the results.
-
-### Proposed Success Criteria
-
-- Approved DNS settings are distributed.
-- The test workstation receives the expected configuration.
-- Internal DNS resolution succeeds.
-- Domain controller discovery succeeds.
-- Domain authentication functions correctly.
-- No unacceptable service impact is observed.
-
-### Implementation Record
-
-| Requirement | Status |
-|---|---|
-| Authorization | Pending |
-| Configuration Backup | Not Performed |
-| Pre-Change Baseline | Not Collected |
-| Implementation | Not Started |
-| Technical Validation | Not Performed |
-| Functional Validation | Not Performed |
-| Rollback | Not Required — Change Not Started |
-| Post-Implementation Review | Pending |
-
-### Expected Outcome
-
-The change is implemented only after the required authorization and readiness checks are completed.
-
-Actual results should be recorded in the Change record.
-
-**Scenario Status:** Illustrative implementation plan. No change execution, validation, or approval is claimed as completed.
-
----
-
-## 16. Failed Change Management
+## 14. Failed Change Management
 
 A failed change requires controlled handling.
 
@@ -1459,9 +1027,7 @@ A failed change does not automatically mean the entire service is unavailable.
 
 The actual technical and business impact must be documented.
 
----
-
-## 17. Rollback and Recovery Management
+## 15. Rollback and Recovery Management
 
 Rollback planning is an essential part of controlled change implementation.
 
@@ -1492,9 +1058,7 @@ Not every change is fully reversible.
 
 For irreversible or difficult-to-reverse changes, the approved plan should identify an alternative recovery strategy.
 
----
-
-## 18. Change Implementation Security
+## 16. Change Implementation Security
 
 Implementation activities must follow applicable security requirements.
 
@@ -1522,9 +1086,7 @@ Do not publish:
 
 Screenshots and command output should be reviewed before publication.
 
----
-
-## 19. Change Implementation Documentation Standards
+## 17. Change Implementation Documentation Standards
 
 Implementation records should distinguish between:
 
@@ -1548,21 +1110,7 @@ Outcomes anticipated before testing.
 
 Outcomes that have not been confirmed.
 
-### Example
-
-**Planned Action:** Update DNS configuration.
-
-**Expected Result:** Workstations receive approved DNS server addresses.
-
-**Actual Result:** Not yet tested.
-
-**Status:** Implementation Pending.
-
-Do not represent expected outcomes as completed results.
-
----
-
-## 20. Change Implementation Quality Checklist
+## 18. Change Implementation Quality Checklist
 
 Before implementation:
 
@@ -1608,9 +1156,7 @@ After implementation:
 - [ ] Change status updated
 - [ ] Post-implementation review prepared
 
----
-
-## 21. Change Implementation Performance Metrics
+## 19. Change Implementation Performance Metrics
 
 Change implementation effectiveness may be evaluated using:
 
@@ -1630,78 +1176,7 @@ Change implementation effectiveness may be evaluated using:
 
 Metrics should be calculated using actual records or clearly labeled simulated datasets.
 
----
-
-## 22. Integration With ITIL Practices
-
-| ITIL Practice | Relationship |
-|---|---|
-| Service Desk | Supports communication and receives change-related incidents |
-| Incident Management | Restores services affected by unsuccessful changes |
-| Service Request Management | May initiate approved fulfillment-related changes |
-| Knowledge Management | Maintains implementation and troubleshooting documentation |
-| Problem Management | Recommends corrective changes based on investigation findings |
-| Change Enablement | Controls authorization, implementation, and review |
-| Monitoring and Event Management | Supports implementation monitoring and validation |
-| Service Configuration Management | Maintains updated Configuration Item information |
-| Information Security Management | Evaluates security implications of changes |
-| Continual Improvement | Uses change outcomes to improve implementation practices |
-
----
-
-## 23. Related Procedures and Documentation
-
-### Change Enablement
-
-- [Change Enablement Overview](../README.md)
-- [Change Authorization](Change-Authorization.md)
-- [Change Template](../../Templates/Change-Template.md)
-
-### Problem Management
-
-- [Problem Management Overview](../../Problem-Management/)
-- [Problem Identification](../../Problem-Management/Procedures/Problem-Identification.md)
-- [Root Cause Analysis](../../Problem-Management/Procedures/Root-Cause-Analysis.md)
-- [Known Error Management](../../Problem-Management/Procedures/Known-Error-Management.md)
-
-### Incident Management
-
-- [Incident Management Overview](../../Incident-Management/)
-- [Incident Investigation](../../Incident-Management/Procedures/Incident-Investigation.md)
-- [Incident Resolution](../../Incident-Management/Procedures/Incident-Resolution.md)
-
-### Knowledge Management
-
-- [Knowledge Management Overview](../../Knowledge-Management/)
-- [Knowledge Article Lifecycle](../../Knowledge-Management/Procedures/Knowledge-Article-Lifecycle.md)
-
-### ITIL Practices
-
-- [Service Desk](../../Service-Desk/)
-- [Service Request Management](../../Service-Request-Management/)
-- [Monitoring and Event Management](../../Monitoring-and-Event-Management/)
-- [Service Configuration Management](../../Service-Configuration-Management/)
-- [Information Security Management](../../Information-Security-Management/)
-- [Continual Improvement](../../Continual-Improvement/)
-
-### Infrastructure Documentation
-
-- [Infrastructure Overview](../../Infrastructure/)
-- [Active Directory](../../Infrastructure/Active-Directory/)
-- [Windows Server](../../Infrastructure/Windows-Server/)
-- [Microsoft 365](../../Infrastructure/Microsoft-365/)
-- [Networking](../../Infrastructure/Networking/)
-- [Virtualization](../../Infrastructure/Virtualization/)
-
-### Organization Documentation
-
-- [Company Overview](../../Company-Overview.md)
-- [IT Service Catalog](../../Service-Catalog.md)
-- [Operational Scenarios](../../Scenarios/)
-
----
-
-## 24. Procedure Review
+## 20. Procedure Review
 
 This procedure should be reviewed when:
 
@@ -1720,21 +1195,4 @@ This procedure should be reviewed when:
 | Version | Description |
 |---|---|
 | 1.0 | Initial Change Implementation procedure |
-
----
-
-## Portfolio Disclaimer
-
-Technical Techno Tech is a fictional organization developed for hands-on IT training and professional portfolio development.
-
-Employee requests, organizational roles, business impact assessments, change schedules, approvals, and implementation scenarios may be simulated.
-
-Technical modifications, diagnostic commands, infrastructure configurations, validation results, and rollback activities are documented based on hands-on lab work where indicated.
-
-Planned implementation steps must not be represented as completed technical actions.
-
-Simulated approvals do not constitute authorization to modify systems outside the learner's controlled environment.
-
-GitHub publication does not imply independent technical approval, production deployment, or organizational authorization.
-
-This procedure demonstrates ITIL-aligned Change Enablement, controlled implementation, technical validation, rollback planning, operational documentation, and continual improvement practices rather than employment experience within an actual production organization.
+| 1.1 | Remove unneccesary information |
