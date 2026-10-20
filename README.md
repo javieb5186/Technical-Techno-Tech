@@ -39,13 +39,20 @@ The repository is organized around the following areas:
 - Document infrastructure configurations and dependencies.
 - Apply ITIL 4 service management practices to realistic technical scenarios.
 - Establish repeatable procedures and consistent documentation.
-- Build a foundation for future automation and AI-assisted IT operations.
+- Build a foundation for future desired roles in IT.
 
 ## Important Note
 
 TTT is a fictional company used to structure a realistic technical lab. The infrastructure and configurations may be real lab resources, while business activities, employee scenarios, and service requests may be emulated.
 
 The repository will continue to evolve as archived projects are reviewed and the updated environment is developed.
+
+Due to licensing and budget constraints, only the following accounts are actively licensed:
+
+- javier.admin
+- javier.user
+
+Additional employee accounts exist for directory, ticketing, access management, and service desk training purposes and may not have active Microsoft 365 licenses assigned.
 
 ## Portfolio Disclaimer
 
