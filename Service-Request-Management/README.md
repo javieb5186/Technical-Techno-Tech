@@ -86,22 +86,6 @@ A **service request** is a request from a user or authorized representative that
 | IT investigates repeated authentication failures | Problem |
 | IT proposes a new organization-wide password policy | Change |
 
-### Service Request vs. Incident
-
-A service request involves asking IT to provide an agreed service, resource, access, or information.
-
-An incident involves an unplanned interruption or reduction in the quality of an existing IT service.
-
-### Service Request vs. Change
-
-Some service requests involve configuration changes.
-
-However, not every service request requires a separate Change Enablement record.
-
-Routine, low-risk, preauthorized activities may be fulfilled through established standard procedures.
-
-Changes requiring additional risk assessment or authorization should follow the appropriate Change Enablement process.
-
 ---
 
 ## Service Request Management Responsibilities
@@ -314,7 +298,7 @@ Factors may include:
 - Resource availability
 - Security or compliance requirements
 
-### Example Priority Levels
+### Priority Levels
 
 | Priority | Description | Example |
 |---|---|---|
@@ -322,8 +306,6 @@ Factors may include:
 | P2 — High | Time-sensitive business requirement | New employee starting the next business day |
 | P3 — Medium | Standard request requiring normal scheduling | Approved application installation |
 | P4 — Low | Nonurgent request or information inquiry | General software usage guidance |
-
-These priorities are proposed for the simulated environment.
 
 Priority does not bypass authorization or security requirements.
 
@@ -471,16 +453,12 @@ Technologies are included in individual request records according to their actua
 
 ## Service Request Management Procedures
 
-The `Procedures/` directory contains repeatable operational instructions for handling requests.
+The [`Procedures/` directory](./Procedures/) contains repeatable operational instructions for handling requests.
 
-| Procedure | Purpose | Status |
-|---|---|---|
-| Request Intake | Defines how requests are submitted and recorded | Planned |
-| Request Classification | Defines request categories and routing | Planned |
-| Request Authorization | Defines eligibility and approval requirements | Planned |
-| Request Fulfillment | Defines standardized fulfillment activities | Planned |
-| Request Validation | Defines verification requirements | Planned |
-| Request Closure | Defines documentation and closure requirements | Planned |
+- Request Assessment
+- Request Logging
+- Request Fulfillment
+- Request Closure 
 
 Procedures will be developed and updated as the simulated IT environment evolves.
 
@@ -488,7 +466,7 @@ Procedures will be developed and updated as the simulated IT environment evolves
 
 ## Service Request Records
 
-The `Records/` directory contains individual service requests and their fulfillment documentation.
+The [`Records/` directory](./Records/) contains individual service requests and their fulfillment documentation.
 
 Each record should include:
 

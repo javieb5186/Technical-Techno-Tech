@@ -1,240 +1,165 @@
-# SCN-XXX — Scenario Title
+# SCN-XXX - Scenario Title
 
-## Scenario Information
+## Overview
 
-| Field | Details |
-|---|---|
-| **Scenario ID** | SCN-XXX |
-| **Scenario Title** | [Descriptive title] |
-| **Organization** | Technical Techno Tech |
-| **Business Department** | [HR / Sales / IT / Software Development / etc.] |
-| **Scenario Type** | [Onboarding / Incident / Infrastructure / Security / etc.] |
-| **Date Started** | YYYY-MM-DD |
-| **Date Completed** | YYYY-MM-DD or In Progress |
-| **Status** | Planned / In Progress / Completed |
-| **Environment** | Simulated Enterprise |
+### Objective
+
+Describe the business requirement and why IT became involved.
+
+### Skills Demonstrated
+
+- [Skill]
+- [Skill]
+- [Skill]
 
 ---
 
-## 1. Business Scenario
+## Business Requirement
 
-### Background
-
-[Describe the business situation that created the need for IT involvement.]
-
-Include relevant details such as:
-
-- Which department or employees are involved?
-- What business activity is taking place?
-- What technical requirement, issue, or operational need exists?
-- Why is IT involvement necessary?
-
-### Business Requirement
-
-[Clearly describe what the business needs IT to accomplish.]
+Explain the business need that initiated the work.
 
 ### Expected Outcome
 
-[Describe what successful completion should look like from the business perspective.]
+Describe what successful completion should look like.
 
 ---
 
-## 2. Scope
+## Technologies Used
 
-### In Scope
+- Active Directory
+- Microsoft Entra ID
+- Microsoft 365
+- PowerShell
 
-- [Activity or system included in this scenario]
-- [Activity or system included in this scenario]
-- [Activity or system included in this scenario]
-
-### Out of Scope
-
-- [Activity or system excluded from this scenario]
-- [Activity or system excluded from this scenario]
+Remove unused technologies.
 
 ---
 
-## 3. Affected IT Services
+## Implementation
 
-Identify the services involved in this scenario.
+### Step 1 - [Action]
 
-| Service ID | IT Service | Purpose |
-|---|---|---|
-| IT-SVC-XXX | [Service Name] | [How the service supports this scenario] |
+Describe the activity performed.
 
-**Reference:** [IT Service Catalog](../../Service-Catalog.md)
+**Screenshot**
 
----
-
-## 4. Technologies & Infrastructure
-
-Identify the technologies and infrastructure involved.
-
-| Technology / System | Role in Scenario |
-|---|---|
-| [Active Directory / Microsoft Entra ID / etc.] | [Purpose] |
-| [Windows Server / Microsoft Intune / etc.] | [Purpose] |
-| [Jira Service Management / etc.] | [Purpose] |
-
-### Relevant Infrastructure
-
-- [Server, workstation, or network resource]
-- [Domain, tenant, or cloud environment]
-- [Relevant infrastructure documentation link]
+`Evidence/example.png`
 
 ---
 
-## 5. ITIL Management Practices Involved
+### Step 2 - [Action]
 
-Identify only the management practices relevant to the scenario.
+Describe the activity performed.
 
-| ITIL Management Practice | Role in Scenario | Related Record |
-|---|---|---|
-| [Service Request Management] | [Purpose] | [SR-XXX](path-to-record) |
-| [Change Enablement] | [Purpose] | [CHG-XXX](path-to-record) |
-| [Information Security Management] | [Purpose] | [Record or documentation link] |
+**Screenshot**
 
-**Note:** Management practices are not separate departments or mandatory sequential stages. A single activity may involve multiple practices.
+`Evidence/example.png`
 
 ---
 
-## 6. Scenario Workflow
+### Step 3 - [Action]
 
-Provide a high-level overview of how the business requirement was addressed.
+Describe the activity performed.
 
-### Phase 1 — Initiation
+**Screenshot**
 
-[Explain how the scenario began and how IT became involved.]
-
-### Phase 2 — Assessment & Planning
-
-[Summarize requirements gathering, technical assessment, risk evaluation, and any necessary approvals.]
-
-### Phase 3 — Implementation / Troubleshooting
-
-[Summarize the technical work performed.]
-
-Detailed commands, configuration steps, troubleshooting results, and evidence should be documented in the associated operational records.
-
-### Phase 4 — Validation
-
-[Explain how IT verified that the business requirement was satisfied.]
-
-### Phase 5 — Completion
-
-[Summarize the outcome, relevant communications, and record closure.]
+`Evidence/example.png`
 
 ---
 
-## 7. Operational Records
+## Results
 
-Link to the records created during this scenario.
+### Outcome
 
-| Record ID | Record Type | Description | Status |
-|---|---|---|---|
-| [SR-XXX](path-to-record) | Service Request | [Description] | [Status] |
-| [INC-XXX](path-to-record) | Incident | [Description] | [Status] |
-| [PRB-XXX](path-to-record) | Problem | [Description] | [Status] |
-| [CHG-XXX](path-to-record) | Change | [Description] | [Status] |
+Summarize the completed work.
 
-Remove unused rows.
+Example:
 
-**Documentation Principle:** Operational records contain the detailed work and supporting evidence. This scenario provides the overall business context and connects those records without duplicating their contents.
+- Account created
+- Access assigned
+- Services provisioned
+- Validation completed
 
----
+### Business Impact
 
-## 8. Results & Validation
-
-### Business Requirements Verification
-
-| Requirement | Validation Method | Result |
-|---|---|---|
-| [Requirement 1] | [How it was verified] | Pass / Fail / Pending |
-| [Requirement 2] | [How it was verified] | Pass / Fail / Pending |
-
-### Final Outcome
-
-[Describe the outcome and whether the original business requirement was satisfied.]
-
-### Outstanding Issues
-
-- [Unresolved issue or follow-up action]
-- [Enter "None" if applicable]
+Explain how the completed work satisfied the business requirement.
 
 ---
 
-## 9. Knowledge & Documentation Updates
+## Documentation Updates
 
-List any documentation created or updated as a result of the scenario.
+Document any records, procedures, or infrastructure documentation created or updated during the scenario.
 
-### Knowledge Articles
+### Service Request Management
 
-- [KB-XXX — Article Title](path-to-article)
+Describe the Service Request record that was created or updated.
+
+**Record:** SR-XXX - [Title]
+
+### Knowledge Management
+
+Describe the Knowledge Base article that was created or updated.
+
+**Article:** KB-XXX - [Title]
 
 ### Infrastructure Documentation
 
-- [Infrastructure Document](path-to-document)
+Describe any environment, system, architecture, or configuration documentation that was updated.
 
-### Other Documentation
+Examples:
 
-- [Relevant procedure or configuration item]
-
-If no documentation updates were required, indicate "Not Applicable."
-
----
-
-## 10. Lessons Learned
-
-### What Went Well
-
-- [Successful process, decision, or technical outcome]
-
-### Challenges Encountered
-
-- [Technical issue, operational challenge, or limitation]
-
-### Opportunities for Improvement
-
-- [Potential improvement to the environment or workflow]
+- Active Directory Overview
+- Network Overview
+- Microsoft 365 Tenant Documentation
+- Server Documentation
 
 ---
 
-## 11. Skills Practiced
+## Related Documentation
 
-List the technical and operational skills demonstrated.
+### Operational Records
 
-### Technical Skills
+- SR-XXX - [Service Request]
 
-- [Technology or technical skill]
-- [Technology or technical skill]
+### Knowledge Articles
 
-### IT Service Management Skills
+- KB-XXX - [Knowledge Article]
 
-- [Relevant ITIL management practice]
-- [Documentation, communication, or operational skill]
+### Infrastructure Documentation
 
----
-
-## 12. Scenario Closure
-
-| Field | Details |
-|---|---|
-| **Final Status** | Completed / Partially Completed / Cancelled |
-| **Business Requirement Met** | Yes / No / Partially |
-| **Validation Completed** | Yes / No |
-| **Associated Records Updated** | Yes / No |
-| **Closure Date** | YYYY-MM-DD |
-
-### Final Summary
-
-[Provide a short summary of the completed scenario, its business impact, and the technical or operational outcomes.]
+- [Infrastructure Document]
 
 ---
 
-## Simulation Disclaimer
+## Lessons Learned
 
-This scenario represents fictional business operations at Technical Techno Tech, a simulated technology solutions company.
+### Technical Lessons
 
-Technical implementation, troubleshooting, and validation are documented based on hands-on work performed in controlled lab environments.
+- [Technical lesson]
+- [Technical lesson]
 
-Simulated employees, business requirements, approvals, and operational records do not represent actual production activity.
+### Process Lessons
+
+- [Process lesson]
+- [Process lesson]
+
+### Improvement Opportunities
+
+- [Future improvement]
+- [Automation opportunity]
+- [Documentation improvement]
+
+---
+
+## Skills Practiced
+
+### Technical
+
+- [Technical skill]
+- [Technical skill]
+
+### IT Service Management
+
+- [Management practice]
+- [Documentation skill]
+- [Operational skill]

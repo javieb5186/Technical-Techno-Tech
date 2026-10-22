@@ -143,12 +143,12 @@ The Service Desk may continue to coordinate communication and track progress aft
 
 Technical Techno Tech's emulated Service Desk may receive employee requests through the following channels:
 
-| Support Channel | Purpose | Implementation Status |
-|---|---|---|
-| Jira Service Management Portal | Centralized ticket submission and tracking | Planned / In Development |
-| Email | Employee support requests and communication | Planned |
-| Chat | Direct communication and troubleshooting | Simulated |
-| Monitoring Alerts | Automated detection of technical events | Planned |
+| Support Channel | Purpose |
+|---|---|
+| Jira Service Management Portal | Centralized ticket submission and tracking |
+| Email | Employee support requests and communication |
+| Chat | Direct communication and troubleshooting |
+| Monitoring Alerts | Automated detection of technical events |
 
 The availability of these channels will be updated as the environment develops.
 
@@ -383,12 +383,7 @@ The Service Desk works alongside other ITIL-aligned management practices such as
 - Incident Management
 - Service Request Management
 - Knowledge Management
-- Problem Management
-- Change Enablement
-- Monitoring and Event Management
 - Service Configuration Management
-- Information Security Management
-- Continual Improvement
 
 The Service Desk is a point of contact and coordination function, not a mandatory approval stage for every IT activity.
 
@@ -402,6 +397,7 @@ Standardized procedures establish consistent support practices.
 | [Ticket Categorization](Procedures/Ticket-Categorization.md) | Defines how tickets are classified |
 | [Ticket Prioritization](Procedures/Ticket-Prioritization.md) | Defines how impact, urgency, and priority are assessed |
 | [Ticket Escalation](Procedures/Ticket-Escalation.md) | Defines escalation requirements and responsibilities |
+| [Ticket Closure](Procedures/Ticket-Closure.md) | Defines how tickets are closed |
 
 Procedures will be developed and tested as the Service Desk environment evolves.
 
@@ -432,8 +428,12 @@ Service-Desk/
 │   ├── Ticket-Intake.md
 │   ├── Ticket-Categorization.md
 │   ├── Ticket-Prioritization.md
-│   └── Ticket-Escalation.md
-└── Records/
+|   ├── Ticket-Escalation.md    
+│   └── Ticket-Closure.md
+├── Records/
+|   ├── SLA-Review/
+|   ├── Ticket-Audits/     
+└── └── Weekly-Reviews/
 ```
 
 ## Service Desk Performance & Improvement
@@ -451,8 +451,6 @@ Service Desk performance may be evaluated using operational metrics such as:
 | User Satisfaction | Evaluates the employee support experience |
 
 Metrics will be introduced as sufficient ticket data becomes available.
-
-Findings may support improvement initiatives documented under [Continual Improvement](../10-Continual-Improvement/).
 
 ## Documentation Standards
 

@@ -4,8 +4,8 @@
 **Department:** Internal IT / Service Desk  
 **Document Type:** Standard Operating Procedure (SOP)  
 **Procedure ID:** SOP-SD-002  
-**Version:** 1.1  
-**Status:** Draft — Lab Procedure  
+**Version:** 1.11  
+**Status:** Procedure  
 **ITIL Practices:** Service Desk, Incident Management, Service Request Management
 
 ## 1. Purpose
