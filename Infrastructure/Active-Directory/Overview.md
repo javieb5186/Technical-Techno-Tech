@@ -117,8 +117,8 @@ technicaltechnotech.com
 
 | Account Type | Count |
 |-------------|---------|
-| Employees | 2 |
-| Contractors | 0 |
+| Employees | 10 |
+| Contractors | 2 |
 | Service Accounts | 0 |
 | Disabled Accounts | 0 |
 
