@@ -61,35 +61,6 @@ List the actual work completed.
 | License assigned | Pass |
 | Resource access verified | Pass |
 
-## Evidence
-
-### Included Evidence
-
-- Ticket PDF
-- Administrative screenshots
-- PowerShell output
-- Validation screenshots
-
-## Lessons Learned
-
-### What I Learned
-
-- [Lesson learned]
-
-### Skills Practiced
-
-- Active Directory Administration
-- Microsoft 365 Administration
-- Access Management
-- Service Request Fulfillment
-- ITIL Service Request Management
-
-### Improvement Opportunities
-
-- [Process improvement]
-- [Automation opportunity]
-- [Documentation improvement]
-
 ## Final Outcome
 
 **Final Status:** Fulfilled

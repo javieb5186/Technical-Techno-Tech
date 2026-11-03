@@ -1,12 +1,12 @@
-# SCN-XXX - Scenario Title
+## SCN-XXX - Scenario Title
 
-## Overview
+### Overview
 
-### Objective
+#### Objective
 
 Describe the business requirement and why IT became involved.
 
-### Skills Demonstrated
+#### Skills Demonstrated
 
 - [Skill]
 - [Skill]
@@ -14,17 +14,17 @@ Describe the business requirement and why IT became involved.
 
 ---
 
-## Business Requirement
+### Business Requirement
 
 Explain the business need that initiated the work.
 
-### Expected Outcome
+#### Expected Outcome
 
 Describe what successful completion should look like.
 
 ---
 
-## Technologies Used
+### Technologies Used
 
 - Active Directory
 - Microsoft Entra ID
@@ -35,41 +35,41 @@ Remove unused technologies.
 
 ---
 
-## Implementation
+### Implementation
 
-### Step 1 - [Action]
-
-Describe the activity performed.
-
-**Screenshot**
-
-`Evidence/example.png`
-
----
-
-### Step 2 - [Action]
+#### Step 1 - [Action]
 
 Describe the activity performed.
 
 **Screenshot**
 
-`Evidence/example.png`
+Evidence/example.png
 
 ---
 
-### Step 3 - [Action]
+#### Step 2 - [Action]
 
 Describe the activity performed.
 
 **Screenshot**
 
-`Evidence/example.png`
+Evidence/example.png
 
 ---
 
-## Results
+#### Step 3 - [Action]
 
-### Outcome
+Describe the activity performed.
+
+**Screenshot**
+
+Evidence/example.png
+
+---
+
+### Results
+
+#### Outcome
 
 Summarize the completed work.
 
@@ -80,29 +80,31 @@ Example:
 - Services provisioned
 - Validation completed
 
-### Business Impact
+#### Business Impact
 
 Explain how the completed work satisfied the business requirement.
 
+#### Closing Ticket
+
+Ticket.pdf
+
 ---
 
-## Documentation Updates
+### Documentation Updates
 
-Document any records, procedures, or infrastructure documentation created or updated during the scenario.
-
-### Service Request Management
+#### Service Request Management
 
 Describe the Service Request record that was created or updated.
 
 **Record:** SR-XXX - [Title]
 
-### Knowledge Management
+#### Knowledge Management
 
 Describe the Knowledge Base article that was created or updated.
 
 **Article:** KB-XXX - [Title]
 
-### Infrastructure Documentation
+#### Infrastructure Documentation
 
 Describe any environment, system, architecture, or configuration documentation that was updated.
 
@@ -115,35 +117,35 @@ Examples:
 
 ---
 
-## Related Documentation
+### Review and Evaluation
 
-### Operational Records
+#### Service Desk Review
 
-- SR-XXX - [Service Request]
+A Service Desk Review was completed to evaluate:
 
-### Knowledge Articles
+- Ticket handling
+- Technical execution
+- Communication
+- Documentation quality
+- Process adherence
 
-- KB-XXX - [Knowledge Article]
-
-### Infrastructure Documentation
-
-- [Infrastructure Document]
+**Review:** SDR-XXX - [Review Title]
 
 ---
 
-## Lessons Learned
+### Lessons Learned
 
-### Technical Lessons
+#### Technical Lessons
 
 - [Technical lesson]
 - [Technical lesson]
 
-### Process Lessons
+#### Process Lessons
 
 - [Process lesson]
 - [Process lesson]
 
-### Improvement Opportunities
+#### Improvement Opportunities
 
 - [Future improvement]
 - [Automation opportunity]
@@ -151,14 +153,14 @@ Examples:
 
 ---
 
-## Skills Practiced
+### Skills Practiced
 
-### Technical
+#### Technical
 
 - [Technical skill]
 - [Technical skill]
 
-### IT Service Management
+#### IT Service Management
 
 - [Management practice]
 - [Documentation skill]

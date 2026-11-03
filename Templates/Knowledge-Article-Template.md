@@ -15,8 +15,6 @@ Briefly describe what this article accomplishes.
 
 Remove items that do not apply.
 
----
-
 ## Requirements
 
 ### Required Access
@@ -30,8 +28,6 @@ Remove items that do not apply.
 - Active Directory Users and Computers
 - PowerShell
 - Microsoft 365 Admin Center
-
----
 
 ## Procedure
 
@@ -52,8 +48,6 @@ Describe the next action.
 ### Step 3 - [Action]
 
 Describe the final action.
-
----
 
 ## Verification
 
@@ -76,8 +70,6 @@ Get-ADUser username
 Get-ADPrincipalGroupMembership username
 ```
 
----
-
 ## Common Issues
 
 | Issue | Resolution |
@@ -86,25 +78,12 @@ Get-ADPrincipalGroupMembership username
 | Group assignment fails | Confirm permissions |
 | License unavailable | Check license inventory |
 
----
-
 ## Related Documentation
 
 - SR-XXX Service Request
 - Related SOP
 - Related KB Article
 
----
-
 ## Notes
 
 Additional recommendations, warnings, or considerations.
-
----
-
-## Skills Practiced
-
-- Active Directory Administration
-- Microsoft 365 Administration
-- PowerShell
-- Identity and Access Management

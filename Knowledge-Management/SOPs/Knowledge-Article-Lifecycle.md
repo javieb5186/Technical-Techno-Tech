@@ -11,27 +11,6 @@ The objective is to ensure technical knowledge is:
 - Accessible
 - Consistently documented
 
----
-
-## Scope
-
-This procedure applies to:
-
-- How-to Articles
-- Administrative Guides
-- Troubleshooting Guides
-- Technical Reference Articles
-
-Examples:
-
-- Active Directory
-- Windows Server
-- Microsoft 365
-- Microsoft Entra ID
-- Networking
-
----
-
 ## Knowledge Article Lifecycle
 
 ```text
@@ -50,19 +29,6 @@ Review and Updates
 Retirement
 ```
 
----
-
-## Article Types
-
-| Type | Purpose |
-|--------|--------|
-| Administrative Guide | Standards and operational guidance |
-| How-To Article | Step-by-step procedures |
-| Troubleshooting Guide | Diagnose and resolve issues |
-| Technical Reference | Reference information and configurations |
-
----
-
 ## Knowledge Article Creation Process
 
 ### Step 1 - Identify a Knowledge Opportunity
@@ -71,8 +37,6 @@ Knowledge articles may be created from:
 
 - Service Requests
 - Incidents
-- Infrastructure Deployments
-- Administrative Activities
 - Lessons Learned
 
 ### Step 2 - Create the Article
@@ -110,8 +74,6 @@ Review:
 
 Store the article in the appropriate Knowledge Base category.
 
----
-
 ## Knowledge Article Standards
 
 All articles should contain:
@@ -120,12 +82,12 @@ All articles should contain:
 - Purpose
 - Requirements
 - Guidance or Procedure
-- Validation
+- Verification / Validation
+- Common Issues
 - Related Documentation
+- Skills Practiced
 
 Additional sections may be added as needed.
-
----
 
 ## Maintenance
 
@@ -136,8 +98,6 @@ Knowledge articles should be updated when:
 - New requirements are introduced
 - Documentation errors are identified
 
----
-
 ## Retirement
 
 Articles should be retired when:
@@ -147,8 +107,6 @@ Articles should be retired when:
 - A newer article supersedes the content
 
 Retired articles should remain available for historical reference when appropriate.
-
----
 
 ## Related Documentation
 
@@ -163,11 +121,3 @@ Knowledge Articles should align with current infrastructure documentation.
 ### Scenarios
 
 Operational scenarios should reference applicable Knowledge Articles.
-
----
-
-## Revision History
-
-| Version | Description |
-|----------|----------|
-| 1.0 | Initial Procedure |

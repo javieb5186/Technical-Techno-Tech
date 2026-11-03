@@ -29,41 +29,6 @@ Primary objectives include:
 
 The Service Desk focuses on effective communication and support coordination while working closely with other IT management practices.
 
-## Scope of Service Desk Operations
-
-### In Scope
-
-The Service Desk supports activities including:
-
-- Employee technical assistance
-- Windows workstation troubleshooting
-- Account and authentication support
-- Password resets and account unlocks
-- Microsoft 365 application assistance
-- Basic network connectivity troubleshooting
-- Software installation assistance
-- Remote technical support
-- Ticket intake and documentation
-- Ticket categorization and prioritization
-- Initial incident diagnosis
-- Service request coordination
-- Technical escalation
-- Employee communication and follow-up
-
-### Out of Scope
-
-The Service Desk does not independently perform activities requiring authorization or expertise beyond its assigned responsibilities.
-
-Examples include:
-
-- Unauthorized infrastructure modifications
-- Unapproved privileged access assignments
-- Major server or network architecture changes
-- Security policy changes without authorization
-- Specialized engineering work outside Service Desk responsibilities
-
-These activities are coordinated with the appropriate IT personnel and management practices.
-
 ## Service Desk Responsibilities
 
 ### 1. Single Point of Contact
@@ -250,7 +215,7 @@ Ticket priority is determined by evaluating business impact and urgency.
 - **Medium:** Timely action is necessary.
 - **Low:** The issue can be addressed through normal support scheduling.
 
-### Example Priority Matrix
+### Priority Matrix
 
 | Impact / Urgency | High Urgency | Medium Urgency | Low Urgency |
 |---|---|---|---|
@@ -400,41 +365,6 @@ Standardized procedures establish consistent support practices.
 | [Ticket Closure](Procedures/Ticket-Closure.md) | Defines how tickets are closed |
 
 Procedures will be developed and tested as the Service Desk environment evolves.
-
-## Service Desk Records
-
-The [`Records/` directory](./Records/) contains supporting records of Service Desk activities that are not already documented in another management practice.
-
-Examples may include:
-
-- General support interactions
-- Ticket intake exercises
-- Customer communication exercises
-- Service Desk operational reviews
-- Ticket classification and routing exercises
-
-Detailed incident investigations are maintained under Incident Management.
-
-Service request fulfillment records are maintained under Service Request Management.
-
-This separation reduces duplicate documentation while preserving links between related activities.
-
-### Directory Structure
-
-```text id="x9m4bk"
-Service-Desk/
-├── README.md
-├── Procedures/
-│   ├── Ticket-Intake.md
-│   ├── Ticket-Categorization.md
-│   ├── Ticket-Prioritization.md
-|   ├── Ticket-Escalation.md    
-│   └── Ticket-Closure.md
-├── Records/
-|   ├── SLA-Review/
-|   ├── Ticket-Audits/     
-└── └── Weekly-Reviews/
-```
 
 ## Service Desk Performance & Improvement
 
